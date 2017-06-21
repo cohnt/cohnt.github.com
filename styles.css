@@ -7,6 +7,14 @@ div {
 	display: inline-block;
 	color: #dddddd;
 }
+h1 {
+	margin: 10px;
+	text-align: left;
+}
+h3 {
+	margin: 10px;
+	text-align: left;
+}
 
 div#sidebar {
 	padding: 10px 20px;
