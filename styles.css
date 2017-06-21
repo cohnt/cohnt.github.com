@@ -1,0 +1,18 @@
+body {
+	background-color: #041E42; /* Michigan Blue */
+	padding: 10px;
+	text-align: center;
+}
+div {
+	display: inline-block;
+	color: #dddddd;
+}
+
+div#sidebar {
+	padding: 10px 20px;
+	margin: 0px 10px;
+}
+div#main {
+	padding: 10px 20px;
+	margin: 0px 10px;
+}
