@@ -5,9 +5,14 @@ body {
 }
 div {
 	display: inline-block;
+	text-align: center;
 	color: #dddddd;
 }
 h1 {
+	margin: 10px;
+	text-align: left;
+}
+h2 {
 	margin: 10px;
 	text-align: left;
 }
@@ -16,11 +21,17 @@ h3 {
 	text-align: left;
 }
 
-div#sidebar {
+div#sidebarCont {
 	padding: 10px 20px;
 	margin: 0px 10px;
+	border: 1px dotted white;
+	width: 15%;
+	vertical-align: top;
 }
-div#main {
+div#mainCont {
 	padding: 10px 20px;
 	margin: 0px 10px;
+	border: 1px dotted white;
+	width: 50%;
+	vertical-align: top;
 }
