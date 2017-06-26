@@ -21,12 +21,32 @@ h3 {
 	text-align: left;
 }
 
+div.contactImageLinkContainer {
+	padding: 0px;
+	margin: 0px;
+	width: 30%;
+	padding-top: 30%;
+	background-size: cover;
+	padding-left: 2%;
+	border: none;
+}
+
+div#mail {
+	background-image: url("./Images/Mail.png")
+}
+div#github {
+	background-image: url("./Images/GitHub.png")
+}
+div#linkedin {
+	background-image: url("./Images/LinkedIn.png")
+}
 div#sidebarCont {
 	padding: 10px 20px;
 	margin: 0px 10px;
 	border: 1px dotted white;
 	width: 15%;
 	vertical-align: top;
+	text-align: left;
 }
 div#mainCont {
 	padding: 10px 20px;
@@ -34,4 +54,5 @@ div#mainCont {
 	border: 1px dotted white;
 	width: 50%;
 	vertical-align: top;
+	text-align: left;
 }
