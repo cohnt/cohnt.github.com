@@ -1,6 +1,6 @@
 var mailLinkText = "hello@tommycohn.com";
 var githubLinkText = "github.com/cohnt";
-var linkedinLinkText = "COMING SOON";
+var linkedinLinkText = "linkedin.com/in/thomas-cohn-566a78143";
 var dimmedOpacity = "0.65";
 var normalOpacity = "1.0";
 
