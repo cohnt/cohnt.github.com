@@ -1,6 +1,8 @@
 var mailLinkText = "hello@tommycohn.com";
 var githubLinkText = "github.com/cohnt";
 var linkedinLinkText = "COMING SOON";
+var dimmedOpacity = "0.65";
+var normalOpacity = "1.0";
 
 var page = {};
 
@@ -12,11 +14,17 @@ function setup() {
 	page.linkText = document.getElementById("linkText");
 
 	page.links.mail.addEventListener("mouseenter", function() { displayLinkText(mailLinkText, -1); });
+	page.links.mail.addEventListener("mouseenter", function() { dimElement(this); });
 	page.links.mail.addEventListener("mouseleave", hideLinkText);
+	page.links.mail.addEventListener("mouseleave", function() { undimElement(this); });
 	page.links.github.addEventListener("mouseenter", function() { displayLinkText(githubLinkText, 0); });
+	page.links.github.addEventListener("mouseenter", function() { dimElement(this); });
 	page.links.github.addEventListener("mouseleave", hideLinkText);
+	page.links.github.addEventListener("mouseleave", function() { undimElement(this); });
 	page.links.linkedin.addEventListener("mouseenter", function() { displayLinkText(linkedinLinkText, 1); });
+	page.links.linkedin.addEventListener("mouseenter", function() { dimElement(this); });
 	page.links.linkedin.addEventListener("mouseleave", hideLinkText);
+	page.links.linkedin.addEventListener("mouseleave", function() { undimElement(this); });
 }
 function displayLinkText(text, pos) {
 	page.linkText.innerHTML = text;
@@ -38,6 +46,14 @@ function displayLinkText(text, pos) {
 function hideLinkText() {
 	page.linkText.innerHTML = "";
 	page.linkText.style.display = "none";
+}
+function dimElement(el) {
+	//
+	el.style.opacity = dimmedOpacity;
+}
+function undimElement(el) {
+	//
+	el.style.opacity = normalOpacity;
 }
 
 setup();
