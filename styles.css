@@ -43,7 +43,7 @@ div#linkedin {
 div#sidebarCont {
 	padding: 10px 20px;
 	margin: 0px 10px;
-	border: 1px dotted white;
+	/* border: 1px dotted white; */
 	width: 15%;
 	vertical-align: top;
 	text-align: left;
@@ -51,8 +51,12 @@ div#sidebarCont {
 div#mainCont {
 	padding: 10px 20px;
 	margin: 0px 10px;
-	border: 1px dotted white;
+	/* border: 1px dotted white; */
 	width: 50%;
 	vertical-align: top;
 	text-align: left;
+}
+div#linkText {
+	width: 100%;
+	display: none;
 }
