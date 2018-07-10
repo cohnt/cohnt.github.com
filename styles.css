@@ -30,6 +30,14 @@ div.contactImageLinkContainer {
 	padding-left: 2%;
 	border: none;
 }
+a:link.contentLink,
+a:visited.contentLink,
+a:hover.contentLink,
+a:active.contentLink {
+	color: #dddddd;
+	background-color: transparent;
+	text-decoration: none;
+}
 
 div#mail {
 	background-image: url("./Images/Mail.png")
