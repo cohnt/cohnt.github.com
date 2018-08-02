@@ -21,6 +21,10 @@ h3 {
 	text-align: left;
 }
 
+a, a:link, a:visited, a:focus, a:hover, a:active {
+	color: #dddddd;
+}
+
 div.contactImageLinkContainer {
 	padding: 0px;
 	margin: 0px;
