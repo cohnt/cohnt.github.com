@@ -1,7 +1,7 @@
 body {
 	background-color: #041E42; /* Michigan Blue */
 	padding: 10px;
-	text-align: center;
+	/*text-align: center;*/
 }
 div {
 	display: inline-block;
@@ -19,6 +19,9 @@ h2 {
 h3 {
 	margin: 10px;
 	text-align: left;
+}
+iframe {
+	margin: 10px;
 }
 
 a, a:link, a:visited, a:focus, a:hover, a:active {
@@ -67,7 +70,7 @@ div#mainCont {
 	padding: 10px 20px;
 	margin: 0px 10px;
 	/* border: 1px dotted white; */
-	width: 50%;
+	/*width: 50%;*/
 	vertical-align: top;
 	text-align: left;
 }
