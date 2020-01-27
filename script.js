@@ -60,7 +60,7 @@ function undimElement(el) {
 function setupResumeSection() {
 	width = document.getElementById("mainCont").clientWidth;
 	document.getElementById("resumeContainer").setAttribute("width", 0.5*width)
-	document.getElementById("resumeContainer").setAttribute("height", (11/8.5) * (0.5*width))
+	document.getElementById("resumeContainer").setAttribute("height", (11/8) * (0.5*width))
 }
 
 setup();
