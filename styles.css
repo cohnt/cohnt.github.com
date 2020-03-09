@@ -45,6 +45,9 @@ a:active.contentLink {
 	background-color: transparent;
 	text-decoration: none;
 }
+iframe.videos {
+	width: 45%;
+}
 #mainCont p {
 	font-size: 16px;
 }
