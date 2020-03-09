@@ -25,6 +25,9 @@ function setup() {
 	page.links.linkedin.addEventListener("mouseenter", function() { dimElement(this); });
 	page.links.linkedin.addEventListener("mouseleave", hideLinkText);
 	page.links.linkedin.addEventListener("mouseleave", function() { undimElement(this); });
+
+	setupResumeSection()
+	setupVideoSection()
 }
 function displayLinkText(text, pos) {
 	page.linkText.innerHTML = text;
@@ -54,6 +57,19 @@ function dimElement(el) {
 function undimElement(el) {
 	//
 	el.style.opacity = normalOpacity;
+}
+function setupResumeSection() {
+	width = document.getElementById("mainCont").clientWidth;
+	document.getElementById("resumeContainer").setAttribute("width", 0.5*width);
+	document.getElementById("resumeContainer").setAttribute("height", (11/8) * (0.5*width));
+}
+function setupVideoSection() {
+	width = document.getElementById("mainCont").clientWidth;
+	videoElts = document.getElementsByClassName("videos");
+	for(var i=0; i<videoElts.length; ++i) {
+		videoElts[i].setAttribute("width", 0.5*width);
+		videoElts[i].setAttribute("height", (9/16) * (0.5*width))
+	}
 }
 
 setup();
