@@ -2698,7 +2698,7 @@ input, select, textarea {
 					height: 100%;
 					opacity: 1.0;
 					z-index: 1;
-					opacity: 0.8;
+					opacity: 0;
 				}
 
 				.tiles article > .image:after {
@@ -2714,7 +2714,7 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+					/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");*/
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2767,6 +2767,7 @@ input, select, textarea {
 
 				.tiles article > a h2 {
 					margin: 0;
+					/*color: #111111;*/
 				}
 
 				.tiles article > a .content {
@@ -2786,7 +2787,7 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				background-color: #ffffff;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -2830,10 +2831,10 @@ input, select, textarea {
 				opacity: 1;
 			}
 
-		* + .tiles {
+/*		* + .tiles {
 			margin-top: 2em;
 		}
-
+*/
 		body.is-preload .tiles article {
 			-moz-transform: scale(0.9);
 			-webkit-transform: scale(0.9);
