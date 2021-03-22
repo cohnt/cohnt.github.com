@@ -12,6 +12,15 @@
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/academicons.min.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<style>
+			div.inner p {
+				margin: 0px;
+			}
+			.image-caption {
+				font-size: 12pt;
+				text-align: center;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -44,27 +53,83 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Particle-Based Localization and Grasping of Grocery Bags</h1>
-							<p>Detailed writeup coming soon! For now, here are some videos.</p>
-							<div style="width:49%; display: inline-block;">
-								<div class="video-container">
-									<iframe src="https://www.youtube-nocookie.com/embed/KUL5KKC8X2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
-								</div>
+							<p>The idea of trying to pick up paper grocery bags originally came from a lab discussion about new robot demonstrations. In a discussion about Kevin French's work <a href="https://ieeexplore.ieee.org/abstract/document/8794104/">Learning Behavior Tress from Demonstration</a>, we considered an experiment where the robot would learn how to efficiently pack grocery bags. At the end of the experiment, the robot would pick up the bag and drive away, for dramatic effect.</p>
+							<br>
+							<p>I took responsibility for this task, and quickly realized it would be far more complicated than it first appeared. There were two key challenges. The bag, and especially its handles, are deformable, which makes any detection or localization task inherently more difficult. And furthermore, the depth camera on our robot sometimes struggles to detect the handles. (See the images below for some examples of detection failures.)</p>
+
+							<div style="width:65%;" class=project-media-cont>
+								<img src="../images/grocery/missing_bag_handles_1.png" alt="" style="width: 100%;">
 							</div>
-							<div style="width:49%; display: inline-block;">
+							<div style="width:32%;" class=project-media-cont>
+								<img src="../images/grocery/missing_bag_handles_2.png" alt="" style="width: 100%;">
+							</div>
+							<p>
+								First, I explored different ways of extracting information from the raw image input to the robot. Edge detection and the <a href="https://en.wikipedia.org/wiki/Scale-invariant_feature_transform">Scale-Invariant Feature Transform</a> descriptor looked interesting, but ultimately weren't useful in detecting the handles. Eventually, I settled on the <a href="https://ieeexplore.ieee.org/document/1467360">Histogram of Oriented Gradients (HOG)</a> descriptor for feature extraction, since it's good at handling deformable objects.
+							</p>
+							<div style="width: 33%" class=project-media-cont>
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/N28Y033kQMk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+								<p class="image-caption">Edge detection on the image.</p>
+							</div>
+							<div style="width: 33%" class=project-media-cont>
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/8ngh96Nhbj4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+								<p class="image-caption">Edge detection applied to the rgb and depth images.</p>
+							</div>
+							<div style="width: 33%" class=project-media-cont>
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/RizzOHm-4wE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+								<p class="image-caption">SIFT descriptors of the rgb and depth images.</p>
+							</div>
+							<p>
+								To detect bag handles, I used a sliding window, powered by a linear support vector machine. Oftentimes, a single handle would be detected multiple times; to reduce these to a single estimate, I would cluster nearby detections using the <a href="https://en.wikipedia.org/wiki/DBSCAN">DBSCAN</a> clustering algorithm. (<a href="http://tommycohn.com/DBSCAN/">I've uploaded an interactive JavaScript implementation of DBSCAN elsewhere on my website.</a>) The centroids of these clusters were then used as the final estimates of the detections.
+							</p>
+							<div style="width: 49%" class=project-media-cont>
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/8ngh96Nhbj4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+								<p class="image-caption">An early version of the detector, displaying the HOG descriptors of the image.</p>
+							</div>
+							<div style="width: 49%" class=project-media-cont>
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/RizzOHm-4wE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+								<p class="image-caption">The final version of the detector.</p>
+							</div>
+							<br style="clear: both;">
+							<p>
+								To actually pick up the bag, the robot needs to know the 3D location of its handles. The HOG detector gives us a 2D location in the image, which extends to a ray in 3D space. An initial, primitive solution was to just look a bit further down, and get the depth of the body of the bag itself. But this isn't a very robust solution, and rarely is able to localize the second handle. In order to reliably find both handles in a variety of conditions, I drive the robot around the bag to triangulate the location of the handles. To handle false positives and noise, I use a pair of particle filters to localize the two handles, with a repulsive factor to ensure they don't converge to the same handle.
+							</p>
+							<div style="width: 33%" class=project-media-cont>
 								<div class="video-container">
 									<iframe src="https://www.youtube-nocookie.com/embed/sxgNvvJMJZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
 								</div>
+								<p class="image-caption">A successful grasp, using the original 3D localization technique.</p>
 							</div>
-							<div style="width:49%; display: inline-block;">
+							<div style="width: 33%" class=project-media-cont>
 								<div class="video-container">
-									<iframe src="https://www.youtube-nocookie.com/embed/2cZXHGBzkxo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+									<iframe src="https://www.youtube-nocookie.com/embed/7XmspJ7xRB4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
 								</div>
+								<p class="image-caption">An initial simulation of the particle filter concept, using a single particle filter, with clustering to find the two handles.</p>
 							</div>
-							<div style="width:49%; display: inline-block;">
+							<div style="width: 33%" class=project-media-cont>
 								<div class="video-container">
-									<iframe src="https://www.youtube-nocookie.com/embed/0VrYAGVioGY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+									<iframe src="https://www.youtube-nocookie.com/embed/KUL5KKC8X2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
 								</div>
+								<p class="image-caption">A successful localization of both handles of the grovery bag, using the dual particle filter system.</p>
 							</div>
+							<br style="clear: both;">
+							<p>
+								The full codebase of this project is scattered across several repositories.
+							</p>
+							<ul>
+								<li><a href="https://github.com/cohnt/ROS-Tools" class="icon fa-file-pdf"> Here</a>, you can find the code used in the initial investigations.</li>
+								<li><a href="https://github.com/cohnt/2D-Bag-Localization-Sim" class="icon fa-file-pdf"> Here</a>, you can find the simulation code for the particle filter triangulation.</li>
+								<li><a href="https://github.com/cohnt/Particle-Based-Localization" class="icon fa-file-pdf"> Here</a>, you can find the code used for localizing the bag handles with the dual particle filter.</li>
+							</ul>
 						</div>
 					</div>
 
