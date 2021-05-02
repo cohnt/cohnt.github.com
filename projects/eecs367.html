@@ -44,8 +44,62 @@
 					<div id="main">
 						<div class="inner">
 							<h1>EECS 367 Robotics Projects</h1>
-							<p>Detailed writeup coming soon!</p>
-							<p>For now, check out this video playlist.</p>
+							<br><br>
+
+							<h3>Project 1: A* Search</h3>
+							<p>In the first project, I implemented the famous <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* Search Algorithm</a> for a 2D world. (Part of this project was implementing our own priority queue using heapsort.) The video below shows my A* implementation in a demonstrative scenario.</p>
+							<div style="width: 50%;">
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/zLpqSekUmVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+							</div><br><br>
+
+							<h3>Project 2: Physical Simulation and PID Control</h3>
+							<p>In the second project, I implemented a physical simulation for a pendulum using <a href="https://en.wikipedia.org/wiki/Euler_method">Euler's method</a> and <a href="https://en.wikipedia.org/wiki/Verlet_integration#Velocity_Verlet">velocity Verlet</a>. I then implemented a <a href="https://en.wikipedia.org/wiki/PID_controller">PID controller</a> for a motor attached to the pendulum, in order to move it to the desired position. The video below demonstrates the velocity Verlet integrator, and the PID controller.</p>
+							<div style="width: 50%;">
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/xOoAOKAfX1o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+							</div><br><br>
+
+							<h3>Project 3: Forward Kinematics</h3>
+							<p>In the third project, I implemented the <a href="https://en.wikipedia.org/wiki/Forward_kinematics">forward kinematics</a> hierarchy for an arbitrary robot. This included implenting various basic matrix routines, and recursively computing the pose of each link and joint in a given robot. The video below shows the pose of each link of the robot updating as the joint states are modified.</p>
+							<div style="width: 50%;">
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/9wuiZZVw1ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+							</div><br><br>
+
+							<h3>Project 4: Finite State Machine (for a Dancing Robot)</h3>
+							<p>In the fourth project, I implemented a <a href="https://en.wikipedia.org/wiki/Finite-state_machine">finite state machine</a> to control a robot choreography system. In other words, <em>I made a robot dance to some music.</em> The video below presents my robot dance sequence.</p>
+							<div style="width: 50%;">
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/AgebeAYjbOw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+							</div><br><br>
+
+							<h3>Project 5: Inverse Kinematics</h3>
+							<p>In the fifth project, I implemented <a href="https://en.wikipedia.org/wiki/Inverse_kinematics">inverse kinematics</a> via graient descent. I did this by first computing the Jacobian matrix of the robot's manipulator (by traversing across each joint in the kinematic chain), and then used the Jacobian's pseudoinverse or transpose to compute the gradient descent step. The video below demonstrates the robot trying to maintain the position of its end effector while I drive it around.</p>
+							<div style="width: 50%;">
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/vv-DtZVY5wg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+							</div><br><br>
+
+							<h3>Project 6: RRT Planning</h3>
+							<p>In the sixth (and final) project, I implemented the <a href="https://en.wikipedia.org/wiki/Rapidly-exploring_random_tree">RRT</a> planning algorithm, and a variant, RRT-Connect. For planning with the robot, this also required implementing axis-aligned minimum bounding box (AABB) collision detection. The videos below demonstrate RRT-Connect being used for planning in the 2D world first used for A* search, and for planning with a robot.</p>
+							<div style="width: 49%;" class=project-media-cont>
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/lOMUcUg5mnI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+							</div>
+							<div style="width: 49%;" class=project-media-cont>
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/H4gUa0D092c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+							</div><br><br>
+
+							<h2>Full Video Playlist</h2>
 							<div style="width: 75%;">
 								<div class="video-container">
 									<iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLU6BDl-vm1jTHYZwrjQczLyQQ_IL8obMQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
