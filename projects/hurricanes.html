@@ -43,9 +43,30 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Hurricane Track Modeling via Manifold Learning</h1>
-							<p>Detailed writeup coming soon!</p>
-							<p><a href="https://github.com/cohnt/stats406_final_project">For now, check out the report and codebase.</a></p>
+							<h1>Hurricane Track Modeling via Manifold Learning <br> (Stats 406 Final Project)</h1>
+							<p class="project-page-cont">Manifold learning is a powerful nonlinear dimensionality reduction technique, where data in a high-dimensional ambient space are modeled as lying along some smooth, low-dimensional manifold. By learning a parameterization of the underlying manifold, we can find a low-dimensional representation of the data that preserves the latent information.</p>
+							<p class="project-page-cont">Ordinarily, the input data for manifold learning must be contained in some Euclidean space. However, it's also possible to handle data of varying size, such as time series data, by utilizing kernel methods. Specifically, given a distance function, we can construct a kernel of the distances to each data point. Most manifold learning algorithms can then use these pairwise distances to compute a low-dimensional embedding.</p>
+							<p class="project-page-cont">In this project, I applied these techniques to model the track (location over time) of hurricanes in the Atlantic Ocean as a low-dimensional manifold. My approach closely followed that of Shen-Shyang Ho et. al. in their paper, <em>Manifold Learning for Multivariate Variable-LengthSequences With an Application to Similarity Search</em>. I then used nonparametric Kernel Regression to estimate the probability that an unknown hurricane makes landfall.</p>
+
+							<p class="project-page-cont">
+								<a href="https://github.com/cohnt/stats406_final_project/blob/master/report/main.pdf" class="icon fa-file-pdf"> Read the Report</a>
+								<br>
+								<a href="https://github.com/cohnt/stats406_final_project" class="icon brands fa-github">Explore the Codebase</a>
+							</p>
+
+							<p class="project-page-cont">Below are some examples of the tracks from several sets of similar storms. The red portion of the track is when the storm was hurricane strength, whereas the blue portion is when the winds were tropical storm force or lower.</p>
+							<div style="width:49%;" class=project-media-cont>
+								<img src="../images/hurricanes/similar_hurricanes_1.png" alt="" style="width: 100%;">
+							</div>
+							<div style="width:49%;" class=project-media-cont>
+								<img src="../images/hurricanes/similar_hurricanes_2.png" alt="" style="width: 100%;">
+							</div>
+							<div style="width:49%;" class=project-media-cont>
+								<img src="../images/hurricanes/similar_hurricanes_3.png" alt="" style="width: 100%;">
+							</div>
+							<div style="width:49%;" class=project-media-cont>
+								<img src="../images/hurricanes/similar_hurricanes_4.png" alt="" style="width: 100%;">
+							</div>
 						</div>
 					</div>
 
