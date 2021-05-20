@@ -44,17 +44,84 @@
 					<div id="main">
 						<div class="inner">
 							<h1>EECS 442 Computer Vision Projects</h1>
-							<p>Detailed writeup will be added after I finish the course. For now, here are some brief examples of what I've done.</p>
-							<h2>Image Dithering (from Project 0)</h2>
-							<img src="../images/dither_in.png" style="width: 40%;">
-							<img src="../images/dither_out.png" style="width: 40%;">
-							<h2>Difference-of-Gaussians Blob Detection (from Project 2)</h2>
-							<img src="../images/dog_cell.png" style="width: 40%;">
-							<h2>Combining Images with Homography (from Project 3)</h2>
-							<img src="../images/homography1.jpg" style="width:35%;">
-							<img src="../images/homography2.jpg" style="width:35%;">
-							<img src="../images/homography_matches.jpg" style="width:20%;">
-							<img src="../images/homography_result.jpg" style="width:90%;">
+							<br><br>
+
+							<h3>Project 0: Dithering Images</h3>
+							<p>The zeroth project included a quick <a href="https://numpy.org/">NumPy</a> intro, before requiring us to implement various methods of image quantization and dithering. Below, I've included two examples below of the output from <a href="https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering">Floyd-Steinberg dithering</a>.</p>
+
+							<div style="width:49%;" class=project-media-cont>
+								<img src="../images/eecs442/dither1_in.png" alt="" style="width: 100%;">
+							</div>
+							<div style="width:49%;" class=project-media-cont>
+								<img src="../images/eecs442/dither1_out.png" alt="" style="width: 100%;">
+							</div>
+							<div style="width:49%;" class=project-media-cont>
+								<img src="../images/eecs442/dither2_in.png" alt="" style="width: 100%;">
+							</div>
+							<div style="width:49%;" class=project-media-cont>
+								<img src="../images/eecs442/dither2_out.png" alt="" style="width: 100%;">
+							</div><br><br>
+
+							<h3>Project 1: Coloring Prokudin-Gorsky's Photographs</h3>
+							<p><a href="https://en.wikipedia.org/wiki/Sergey_Prokudin-Gorsky">Sergei Mikhailovich Prokudin-Gorsky</a> (1863-1944) was a Russian photographer who took black-and-white photographs through three color filters -- red, blue, and green -- with the hope that people in the future could combine them to produce color images. In this project, I made his dream a reality, by finding the best alignment between the three images (using normalized cross-correlation) and overlaying them. I've included two examples below of Prokudin-Gorsky's photography, along with the best-aligned combine color image.</p>
+
+							<div style="width:12%;" class=project-media-cont>
+								<img src="../images/eecs442/pg1_in.jpg" alt="" style="width: 100%;">
+							</div>
+							<div style="width:37%;" class=project-media-cont>
+								<img src="../images/eecs442/pg1_out.jpg" alt="" style="width: 100%;">
+							</div>
+							<div style="width:12%;" class=project-media-cont>
+								<img src="../images/eecs442/pg2_in.jpg" alt="" style="width: 100%;">
+							</div>
+							<div style="width:37%;" class=project-media-cont>
+								<img src="../images/eecs442/pg2_out.jpg" alt="" style="width: 100%;">
+							</div><br><br>
+
+							<h3>Project 2: Feature Extraction and Blob Detection</h3>
+							<p>This project included a variety of tasks relating to image feature extraction. The focus was primarily implementing and demonstrating various filters, including Gaussian filters (for smoothing), Laplacian-of-Gaussians, difference-of-Gaussians, the Sobel operator, and the Harris corner score. As an application, we tried to identify and count the number of cells in an image. Below, I've included an image of cell detections, using difference-of-Gaussians.</p>
+
+							<div style="width:24%;" class=project-media-cont>
+								<img src="../images/eecs442/cell1_in.png" alt="" style="width: 100%;">
+							</div>
+							<div style="width:24%;" class=project-media-cont>
+								<img src="../images/eecs442/cell1_out.png" alt="" style="width: 100%;">
+							</div>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<div style="width:24%;" class=project-media-cont>
+								<img src="../images/eecs442/cell2_in.png" alt="" style="width: 100%;">
+							</div>
+							<div style="width:24%;" class=project-media-cont>
+								<img src="../images/eecs442/cell2_out.png" alt="" style="width: 100%;">
+							</div><br><br>
+
+							<h3>Project 3: Homography and Warping Images</h3>
+							<p>The idea behind this project is somewhat simple: given a pair of overlapping images, compute a homography transformation, which allows us to warp one image onto the other, and stitch them together to produce a single image. I matched AKAZE features between the two images, used RANSAC to fit a homography transformation between the two images, and then used OpenCV to warp one image and stitch it onto the other. Below is an example of the matched features in two input images, and their combined output.</p>
+
+							<div style="width:30%;" class=project-media-cont>
+								<img src="../images/eecs442/homography_matches.jpg" style="width: 100%;">
+							</div>
+							<div style="width:68%;" class=project-media-cont>
+								<img src="../images/eecs442/homography_out.jpg" style="width: 100%;">
+							</div><br><br>
+
+							<h3>Project 4: Gradient Descent and Neural Networks</h3>
+							<p>This project focused on gradient descent, and then later build neural networks from scratch. Below is an animation of fitting a homography transformation (i.e. a perspective shift) using gradient descent. Unfortunately, I don't have any nice visualizations from the remainder of the project.</p>
+
+							<div style="width:50%;" class=project-media-cont>
+								<img src="../images/eecs442/homography_gradient_descent.gif" style="width: 100%;">
+							</div><br><br>
+
+							<h3>Project 5: Neural Networks with <a href="https://pytorch.org/">PyTorch</a></h3>
+							<p>In the final project of the class, we explored some various other applications of neural networks, while simultaneously introducing the <a href="https://pytorch.org/">PyTorch</a> library. We performed image classification with a convolutional neural network, generated adversarial examples for a pretrained image classifier, and performed semantic segmentation of building facades. Below is an example of an adversarial attack, along with the output of my semantic segmentation network (orange denotes window, blue denotes facade, and black is "other").</p>
+
+							<div style="width:100%;" class=project-media-cont>
+								<img src="../images/eecs442/adversarial.png" style="width: 100%;">
+							</div>
+							<div style="width:100%;" class=project-media-cont>
+								<img src="../images/eecs442/segmentation.png" style="width: 100%;">
+							</div><br><br>
+
 						</div>
 					</div>
 
