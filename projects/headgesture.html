@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Head Pose Gesture Recognition</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/academicons.min.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Back to Home</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Head Pose Gesture Recognition <br> (EECS 498-005 Final Project)</h1>
+							<h2><a href="http://tommycohn.com/">Thomas Cohn</a>, Lance Ying</h2>
+
+							<p class="project-page-cont">EECS 498-005 was a special topics course offered by the University of Michigan in the winter semester of 2021, titled <em>Applied Machine Learning for Affective Computing</em>. The focus of this class was how machine learning can be used to understand and interpret human behavior, through the mediums of text, audio, and video.</p>
+							<p class="project-page-cont">In our project, we aimed to identify head-based gestures in a video, such as nodding "yes", or shaking "no". Our implementation begins by detecting a set of facial landmarks from a video feed. We initially built our own detector using a convolutional neural network. However, our model didn't generalize outside of the dataset's images, and we had to use a prebuilt detector from the Dlib library. We then estimated the head pose using these facial landmarks, by solving the <a href="https://en.wikipedia.org/wiki/Perspective-n-Point">Perspective-n-Point</a> problem with OpenCV.</p>
+							<p class="project-page-cont">Given a sequence of head poses, as obtained by a video, we could then attempt to identify the gesture. To compare these spatio-temporal sequences, we used a similarity metric described by Shen-Shyang Ho et. al. in their paper, <a href="https://ieeexplore.ieee.org/document/7060711"><em>Manifold Learning for Multivariate Variable-Length Sequences With an Application to Similarity Search</em></a>, and then performed nearest-neighbors classification with respect to this metric.</p>
+
+							<p class="project-page-cont">
+								<a href="https://drive.google.com/file/d/1AVlwgXs67TOGz-cT55T3TQDrktR0HV6I/view?usp=sharing" class="icon fa-file-pdf"> Read the Report</a>
+								<br>
+								<a href="https://github.com/cohnt/head-tracking-gesture-recognition" class="icon brands fa-github">Explore the Codebase</a>
+							</p>
+
+							<div style="width:50%; display:inline-block">
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/dKcSs_pl4oo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Contact</h2>
+								<ul class="icons">
+									<li><a href="mailto:hello@tommycohn.com" target="_blank" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://scholar.google.com/citations?user=1Eg4C90AAAAJ" class="plainicon brands style2 ai ai-google-scholar"><span class="label">Google Scholar</span></a></li>
+									<li><a href="https://github.com/cohnt/" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/thomas-cohn-hello/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Thomas Cohn. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
