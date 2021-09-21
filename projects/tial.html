@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Topologically-Informed Atlas Learning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/academicons.min.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Back to Home</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Topologically-Informed Atlas Learning</h1>
+							<h2><a href="http://tommycohn.com">Thomas Cohn</a>, Nikhil Devraj, <a href="https://osj.name/">Odest Chadwicke Jenkins</a></h2>
+							<p>We present a new technique that enables manifold learning to accurately embed data manifolds that contain holes, without discarding any topological information. Manifold learning aims to embed high dimensional data into a lower dimensional Euclidean space by learning a coordinate chart, but it requires that the entire manifold can be embedded in a single chart. This is impossible for manifolds with holes. In such cases, it is necessary to learn an atlas: a collection of charts that collectively cover the entire manifold. We begin with many small charts, and combine them in a bottom-up approach, where charts are only combined if doing so will not introduce problematic topological features. When it is no longer possible to combine any charts, each chart is individually embedded with standard manifold learning techniques, completing the construction of the atlas. We show the efficacy of our method by constructing atlases for challenging synthetic manifolds; learning human motion embeddings from motion capture data; and learning kinematic models of articulated objects.</p>
+
+							<p>
+								<em>This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible.</em>
+								<br>
+								<!-- <a href="#" class="icon fa-file-pdf"> Read the Pre-Print</a> -->
+								(Pre-print coming soon!)
+								<br>
+								(Codebase coming soon!)
+							</p>
+
+							<div style="width: 49%" class=project-media-cont>
+								<img id="left_img" src="../images/tial/can_opener.png" alt="" style="width: 100%;">
+								<p class="image-caption">The can opener we used to construct a kinematic model. It is annotated with the computed <a href="https://april.eecs.umich.edu/software/apriltag">AprilTag</a> poses, which serve as the input for our atlas learning.</p>
+							</div>
+							<div style="width: 49%" class=project-media-cont>
+								<img id="right_img" src="../images/tial/embedding.gif" alt="" style="width: 100%;">
+								<p class="image-caption" style="margin-left: 40px; margin-right: 25px;">The learned nonparametric kinematic model for the can opener. The left two images are the embeddings of the individual coordinate charts, colored according to the angle made by the smaller, twisting handle. Moving horizontally across the two charts represents the continuous rotation of the smaller handle, as shown by the AprilTag poses in the right image.</p>
+								<script type="text/javascript">
+									var l_h = document.getElementById("left_img").offsetHeight;
+									var r_h = document.getElementById("right_img").offsetHeight;
+									var new_h = parseFloat(l_h) - parseFloat(r_h);
+									document.getElementById("right_img").style.marginBottom = new_h + "px";
+								</script>
+							</div>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Contact</h2>
+								<ul class="icons">
+									<li><a href="mailto:hello@tommycohn.com" target="_blank" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://scholar.google.com/citations?user=1Eg4C90AAAAJ" class="plainicon brands style2 ai ai-google-scholar"><span class="label">Google Scholar</span></a></li>
+									<li><a href="https://github.com/cohnt/" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/thomas-cohn-hello/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Thomas Cohn. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
