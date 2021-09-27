@@ -44,47 +44,80 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Coordinate Chart Particle Filter for Deformable Object Pose Estimation</h1>
-							<p>Detailed writeup coming soon! For now, here are some videos.</p>
+							<p style="margin: 0 0 0.75em 0;">The idea of using manifold learning to build useful representations of deformable objects is an idea <a href="https://ocj.name/">Professor Chad Jenkins</a> and I have discussed on many occasions; he envisioned an experiment where we manipulate a deformable object, such as a piece of paper, for a robot, and the robot uses that information to learn how the object can change. Together with Dr. Jenkins and <a href="https://karthikdesingh.com/">Dr. Karthik Desingh</a>, we distilled this concept into a much more specific experiment: pose estimation/tracking of a deformable object. The usage of manifold learning to construct a low-dimensional object representation was necessary, as particle filters may struggle to converge in high-dimensional spaces.</p>
+							<p>The theoretical requirement of our project was a bijective mapping between manifold data and its embedding. The initial mapping from the manifold to the embedding was constructed with <a href="https://en.wikipedia.org/wiki/Isomap">ISOMAP</a>. We then computed the <a href="https://en.wikipedia.org/wiki/Delaunay_triangulation">Delaunay Triangulation</a> of the embedding. To map points from the embedding back to the manifold, we computed its <a href="https://en.wikipedia.org/wiki/Barycentric_coordinate_system">barycentric coordinates</a> with respect to its containing simplex, and applied these to the corresponding points on the manifold. In effect, we map the simplices in the embedding back up to the manifold.</p>
+							<div style="width:100%; text-align: center;" class=project-media-cont>
+								<div style="width: 65%; display: inline-block;">
+									<img src="../images/ccpf/inverse_mapping_process.png" alt="">
+									<p class="image-caption">A visualization of the process for embedding the manifold, and then constructing the inverse mapping. The steps are, in order, embedding with ISOMAP, computing the Delaunay triangulation, and mapping simplices back to the manifold via barycentric coordinates.</p>
+								</div>
+							</div>
+							<p>The first deformable object we considered was a piece of string. I initially considered a piece of string lying flat on a 2D surface, as a simple starting point. By using a red string on a white background, it was easy to detect the string's position in each frame of a video. After learning an object representation with manifold learning, I was able to track the string position in a new video sequence.</p>
+							<div style="width:100%; display: inline-block; text-align: center;">
+								<div class="video-container" style="width: 50%; display: inline-block; padding-bottom: 28.125%;">
+									<div>
+										<iframe src="https://www.youtube-nocookie.com/embed/YlLv26QsXN8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+									</div>
+								</div>
+								<p class="image-caption" style="width: 50%; display: inline-block;">In this video, I perform string tracking in a video sequence. I artificially added occlusions (represented by the white boxes) and false positives (represented by the red boxes).</p>
+							</div>
+							<p>I also used blender physics simulation to generate 3D rope data, and used this for experiments involving pose estimation. In the following videos, the ground truth is black, and the maximum likelihood estimate is in red. The latter two videos included simulated occlusion, which is represented by the dashed portion of the ground truth.</p>
+							<div style="width:33%; display: inline-block;">
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/Q2A5BDnwdGc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+							</div>
+							<div style="width:33%; display: inline-block;">
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/1zQ-KHXXNuY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+							</div>
+							<div style="width:33%; display: inline-block;">
+								<div class="video-container">
+									<iframe src="https://www.youtube-nocookie.com/embed/ZSwLzzL5PLc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+								</div>
+							</div>
+							<p>I also implemented a synthetic experiment, inspired by the paper <em><a href="http://www.michaelisard.com/pubs/pampas.pdf">PAMPAS: Real-Valued Graphical Models for Computer Vision</a></em>. In this experiment, I attempted to locate a simulated articulated object in a cluttered image. The object is composed of a central, circular component, with four arms extending from it, with each arm including two links. I added a hidden kinematic constraint, where the joint angle between the center and an arm's inner link is the same as that between the inner and outer link. Using this model, the particle filter is able to find the object in a cluttered scene, even if the central node is occluded.</p>
+							<div style="width: 100%; display: inline-block; text-align: center;">
+								<div style="width:66%; display: inline-block;">
+									<div style="width:49%; display: inline-block;">
+										<div class="video-container">
+											<iframe src="https://www.youtube-nocookie.com/embed/ea2WXY9MTKA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+										</div>
+									</div>
+									<div style="width:49%; display: inline-block;">
+										<div class="video-container">
+											<iframe src="https://www.youtube-nocookie.com/embed/TbTcfLBnAPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>At this point, I moved on to the primary experiment for this project. Using the <a href="https://web.bii.a-star.edu.sg/archive/machine_learning/Projects/behaviorAnalysis/Lie-X/Lie-X.html">Lie-X mouse tracking dataset</a>, I learned a deformable object model for the mouse, and used it for pose estimation and tracking tasks.</p>
 							<div style="width:24%; display: inline-block;">
 								<div class="video-container">
 									<iframe src="https://www.youtube-nocookie.com/embed/vZACLDbxd3I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
 								</div>
-							</div>
-							<div style="width:24%; display: inline-block;">
-								<div class="video-container">
-									<iframe src="https://www.youtube-nocookie.com/embed/d9tlXhUH06g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
-								</div>
-							</div>
-							<div style="width:24%; display: inline-block;">
-								<div class="video-container">
-									<iframe src="https://www.youtube-nocookie.com/embed/D_21Uv9hhxU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
-								</div>
+								<p class="image-caption">A visualization of the learned deformable model. <br>&nbsp;</p>
 							</div>
 							<div style="width:24%; display: inline-block;">
 								<div class="video-container">
 									<iframe src="https://www.youtube-nocookie.com/embed/xMGqjpfdB7o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
 								</div>
+								<p class="image-caption">A simple pose-estimation task, from a single depth image.</p>
 							</div>
 							<div style="width:24%; display: inline-block;">
 								<div class="video-container">
-									<iframe src="https://www.youtube-nocookie.com/embed/yyfzqNQYMtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+									<iframe src="https://www.youtube-nocookie.com/embed/D_21Uv9hhxU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
 								</div>
+								<p class="image-caption">A simple tracking task, from a series of depth image.</p>
 							</div>
 							<div style="width:24%; display: inline-block;">
 								<div class="video-container">
-									<iframe src="https://www.youtube-nocookie.com/embed/xVGgHchmkbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+									<iframe src="https://www.youtube-nocookie.com/embed/d9tlXhUH06g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
 								</div>
+								<p class="image-caption">A similar tracking task, with an added occlusion. <br>&nbsp;</p>
 							</div>
-							<div style="width:24%; display: inline-block;">
-								<div class="video-container">
-									<iframe src="https://www.youtube-nocookie.com/embed/ZSwLzzL5PLc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
-								</div>
-							</div>
-							<div style="width:24%; display: inline-block;">
-								<div class="video-container">
-									<iframe src="https://www.youtube-nocookie.com/embed/7LUyOPI3GRI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
-								</div>
-							</div>
+							<p><a href="https://github.com/cohnt/Deformable-Object-Manifold-Learning" class="icon brands fa-github">Explore the Codebase</a></p>
 						</div>
 					</div>
 
