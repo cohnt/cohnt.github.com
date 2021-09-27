@@ -36,6 +36,10 @@ iframe.contained-video {
 	height: 100%;
 	border: 0;
 }
+p.image-caption {
+	font-size: 12pt;
+	text-align: center;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
