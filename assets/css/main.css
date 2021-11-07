@@ -41,6 +41,42 @@ p.image-caption {
 	text-align: center;
 }
 
+/*div {
+	border:  1px dotted black !important;
+}*/
+
+div.project-section {
+	display: block;
+	font-size: 18px;
+	line-height: 24px;
+}
+div.project-section div {
+	display: inline-block;
+	vertical-align: middle;
+}
+div.project-image-cont {
+	width: 20%;
+	height: 200px;
+	text-align: center;
+	vertical-align: middle;
+}
+div.project-image-cont a {
+	border: none;
+}
+div.project-description {
+	display: inline-block;
+	width: 75%;
+}
+div.project-description p {
+	display: inline-block;
+}
+div.project-section div img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	width: auto;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -151,8 +187,9 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #585858;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
+		/*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
+		font-family: "Arial";
+		font-size: 14pt;
 		font-weight: 300;
 		line-height: 1.75;
 	}
@@ -234,7 +271,7 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
-		letter-spacing: 0.35em;
+		letter-spacing: 0.2em;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
