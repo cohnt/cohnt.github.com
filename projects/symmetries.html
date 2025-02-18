@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+  Phantom by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Sampling-Based Motion Planning with Discrete Configuration-Space Symmetries</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/academicons.min.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Header -->
+          <header id="header">
+            <div class="inner">
+
+
+              <!-- Nav -->
+                <nav>
+                  <ul>
+                    <li><a href="#menu">Menu</a></li>
+                  </ul>
+                </nav>
+
+            </div>
+          </header>
+
+        <!-- Menu -->
+          <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+              <li><a href="../index.html">Back to Home</a></li>
+            </ul>
+          </nav>
+
+        <!-- Main -->
+          <div id="main">
+            <div class="inner">
+              <h1>Sampling-Based Motion Planning with Discrete Configuration-Space Symmetries</h1>
+              <h2><a href="http://tommycohn.com">Thomas Cohn</a>, <a href="https://locomotion.csail.mit.edu/russt.html/">Russ Tedrake</a></h2>
+              <p>Paste in the abstract here</p>
+
+              <p>
+                <a href="#" class="icon fa-file-pdf"> Read the Preprint (Coming Soon!)</a>
+                <br>
+                <a href="#" class="icon brands fa-github"> Explore the Codebase (Coming Soon!)</a>
+              </p>
+
+              <h3>Results Video:</h3>
+              <div style="width:49%; display: inline-block;">
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contained-video"></iframe>
+                </div>
+              </div>
+
+              <br><br>
+              <h3>Recordings of Symmetry-Aware and Symmetry-Unaware Plans</h3>
+              <p>Each gif on the left is the plan produced by the symmetry-aware planner, and each gif on the right is the corresponding plan produced by the symmetry-unaware planner.</p>
+
+              <div style="width: 49%" class=project-media-cont>
+                <img src="images/symmetries/triangle_aware.gif" alt="" style="width: 100%;">
+                <p class="image-caption">Symmetry-Aware Plan (RRT*)</p>
+              </div>
+              <div style="width: 49%" class=project-media-cont>
+                <img src="images/symmetries/triangle_unaware.gif" alt="" style="width: 100%;">
+                <p class="image-caption">Symmetry-Unware Plan (RRT*)</p>
+              </div>
+              <div style="width: 49%" class=project-media-cont>
+                <img src="images/symmetries/cube_aware.gif" alt="" style="width: 100%;">
+                <p class="image-caption">Symmetry-Aware Plan (PRM)</p>
+              </div>
+              <div style="width: 49%" class=project-media-cont>
+                <img src="images/symmetries/cube_unaware.gif" alt="" style="width: 100%;">
+                <p class="image-caption">Symmetry-Unware Plan (PRM)</p>
+              </div>
+
+              <br><br>
+              <h3>Scaling of Improvements</h3>
+              <p>As the group order increases, we notice increasing improvements in both runtime and path length when both planners are given the same resources. In the following plots, crosses indicate 2D experiments, and circles indicate 3D experiments. The color of each point indicates the algorithm: red is RRT, orange is RRT*, blue is radius-PRM, and green is KNN-PRM.</p>
+              <div style="width: 49%" class=project-media-cont>
+                <img src="images/symmetries/runtime_vs_group_order.png" alt="" style="width: 100%;">
+                <!-- Runtime vs group order (no caption needed, since the plots will have titles) -->
+              </div>
+              <div style="width: 49%" class=project-media-cont>
+                <img src="images/symmetries/path_length_vs_group_order.gif" alt="" style="width: 100%;">
+                <!-- Path length vs group order (no caption needed, since the plots will have titles) -->
+              </div>
+              <p>Similarly, as the configuration space dimension increases, symmetry-aware planners scale much better than the symmetry-unaware baselines. We increase the configuration space dimension by planning jointly for multiple objects in 2D space. (Dimensions not divisible by 3 are obtained by fixing some degrees of freedom of the last object.)</p>
+              <!-- Plots to do -- unclear for now. -->
+
+              <br><br>
+              <h3>Complete Numerical Results</h3>
+              <p>In the following table, we plot out all experimental results. For each obejct, we plot the success rate of each algorithm, as well as the relative runtime and path length improvements.</p>
+              <!-- TODO: embed the results google sheet here -->
+            </div>
+          </div>
+
+        <!-- Footer -->
+          <footer id="footer">
+            <div class="inner">
+              <section>
+                <h2>Contact</h2>
+                <ul class="icons">
+                  <li><a href="mailto:hello@tommycohn.com" target="_blank" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                  <li><a href="https://scholar.google.com/citations?user=1Eg4C90AAAAJ" class="plainicon brands style2 ai ai-google-scholar"><span class="label">Google Scholar</span></a></li>
+                  <li><a href="https://github.com/cohnt/" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                  <li><a href="https://www.linkedin.com/in/thomas-cohn-hello/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                  <li><a href="https://blog.tommycohn.com/" class="icon solid style2 fa-blog"><span class="label">Research Blog</span></a></li>
+                </ul>
+              </section>
+              <ul class="copyright">
+                <li>&copy; Thomas Cohn. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+              </ul>
+            </div>
+          </footer>
+
+      </div>
+
+    <!-- Scripts -->
+      <script src="../assets/js/jquery.min.js"></script>
+      <script src="../assets/js/browser.min.js"></script>
+      <script src="../assets/js/breakpoints.min.js"></script>
+      <script src="../assets/js/util.js"></script>
+      <script src="../assets/js/main.js"></script>
+
+  </body>
+</html>
