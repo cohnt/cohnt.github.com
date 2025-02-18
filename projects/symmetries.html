@@ -65,31 +65,31 @@
               <p>Each gif on the left is the plan produced by the symmetry-aware planner, and each gif on the right is the corresponding plan produced by the symmetry-unaware planner.</p>
 
               <div style="width: 49%" class=project-media-cont>
-                <img src="images/symmetries/triangle_aware.gif" alt="" style="width: 100%;">
+                <img src="../images/symmetries/triangle_aware.gif" alt="" style="width: 100%;">
+                <p class="image-caption">Symmetry-Aware Plan (KNN-PRM)</p>
+              </div>
+              <div style="width: 49%" class=project-media-cont>
+                <img src="../images/symmetries/triangle_unaware.gif" alt="" style="width: 100%;">
+                <p class="image-caption">Symmetry-Unware Plan (KNN-PRM)</p>
+              </div>
+              <div style="width: 49%" class=project-media-cont>
+                <img src="../images/symmetries/cube_aware.gif" alt="" style="width: 100%;">
                 <p class="image-caption">Symmetry-Aware Plan (RRT*)</p>
               </div>
               <div style="width: 49%" class=project-media-cont>
-                <img src="images/symmetries/triangle_unaware.gif" alt="" style="width: 100%;">
+                <img src="../images/symmetries/cube_unaware.gif" alt="" style="width: 100%;">
                 <p class="image-caption">Symmetry-Unware Plan (RRT*)</p>
-              </div>
-              <div style="width: 49%" class=project-media-cont>
-                <img src="images/symmetries/cube_aware.gif" alt="" style="width: 100%;">
-                <p class="image-caption">Symmetry-Aware Plan (PRM)</p>
-              </div>
-              <div style="width: 49%" class=project-media-cont>
-                <img src="images/symmetries/cube_unaware.gif" alt="" style="width: 100%;">
-                <p class="image-caption">Symmetry-Unware Plan (PRM)</p>
               </div>
 
               <br><br>
               <h3>Scaling of Improvements</h3>
               <p>As the group order increases, we notice increasing improvements in both runtime and path length when both planners are given the same resources. In the following plots, crosses indicate 2D experiments, and circles indicate 3D experiments. The color of each point indicates the algorithm: red is RRT, orange is RRT*, blue is radius-PRM, and green is KNN-PRM.</p>
               <div style="width: 49%" class=project-media-cont>
-                <img src="images/symmetries/runtime_vs_group_order.png" alt="" style="width: 100%;">
+                <img src="../images/symmetries/runtime_vs_group_order.png" alt="" style="width: 100%;">
                 <!-- Runtime vs group order (no caption needed, since the plots will have titles) -->
               </div>
               <div style="width: 49%" class=project-media-cont>
-                <img src="images/symmetries/path_length_vs_group_order.gif" alt="" style="width: 100%;">
+                <img src="../images/symmetries/path_length_vs_group_order.gif" alt="" style="width: 100%;">
                 <!-- Path length vs group order (no caption needed, since the plots will have titles) -->
               </div>
               <p>Similarly, as the configuration space dimension increases, symmetry-aware planners scale much better than the symmetry-unaware baselines. We increase the configuration space dimension by planning jointly for multiple objects in 2D space. (Dimensions not divisible by 3 are obtained by fixing some degrees of freedom of the last object.)</p>
@@ -129,6 +129,17 @@
       <script src="../assets/js/breakpoints.min.js"></script>
       <script src="../assets/js/util.js"></script>
       <script src="../assets/js/main.js"></script>
+
+    <!-- Play gifs in sync https://stackoverflow.com/a/77107720 -->
+      <script>
+        Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+          console.log('images finished loading');
+          images = document.getElementsByTagName("img");
+          for (image of images) {
+            image.src = image.getAttribute("src");
+          }
+        });
+      </script>
 
   </body>
 </html>
