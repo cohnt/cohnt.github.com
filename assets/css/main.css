@@ -23,11 +23,24 @@ p.author-list {
 	margin: 0.5em 0 0 0;
 }
 
+div.video-wrapper {
+  width: 49%;
+  min-width: 300px;
+  display: inline-block;
+}
 div.video-container {
 	position: relative;
 	width: 100%;
 	padding-bottom: 56.25%;
 }
+/* If the video is under ~3 inches wide, make it full width */
+@media (max-width: 3in) {
+  .video-wrapper {
+    width: 100%;
+  }
+}
+
+
 iframe.contained-video {
 	position: absolute;
 	top: 0;
