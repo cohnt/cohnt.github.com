@@ -43,7 +43,6 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
 }
 
-/* Automatic Dark Mode preference fallback if no explicit theme set */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg-color: #0d1117;
@@ -75,7 +74,7 @@
 }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: var(--text-main);
@@ -250,7 +249,7 @@ img, iframe {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  min-width: 0; /* Prevents overflow issues with grid */
+  min-width: 0;
 }
 
 .section-title {
@@ -268,20 +267,33 @@ img, iframe {
 /* ==========================================================================
    Scrollable Container Component (News & Publications)
    ========================================================================== */
+.box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .scrollable-box {
-  max-height: 480px;
   overflow-y: auto;
-  padding-right: 0.75rem;
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   background: var(--bg-card);
   padding: 1.25rem;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.35s ease-in-out;
 }
 
+.news-box {
+  max-height: 140px;
+}
+
+.pub-box {
+  max-height: 480px;
+}
+
+/* Explicit override when expanded so inline style or class constraints are removed */
 .scrollable-box.expanded {
-  max-height: none;
-  overflow-y: visible;
+  max-height: none !important;
+  overflow-y: visible !important;
 }
 
 /* Custom Scrollbar */
@@ -299,9 +311,8 @@ img, iframe {
 
 .box-actions {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 0.25rem;
 }
 
 .btn-toggle-scroll {
@@ -321,8 +332,13 @@ img, iframe {
 }
 
 /* ==========================================================================
-   Video Container
+   Video Container with Max Size Constraint
    ========================================================================== */
+.video-container-max {
+  max-width: 600px;
+  width: 100%;
+}
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -343,7 +359,7 @@ img, iframe {
 }
 
 /* ==========================================================================
-   Publication Items & Cards
+   Publication Items & Image Aspect Ratio Preserving
    ========================================================================== */
 .pub-list {
   display: flex;
@@ -366,20 +382,23 @@ img, iframe {
 
 .pub-thumb {
   width: 100%;
+  height: 120px;
   border-radius: var(--radius-sm);
   overflow: hidden;
   border: 1px solid var(--border-color);
   background: var(--bg-secondary);
-  aspect-ratio: 16/9;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 4px;
 }
 
 .pub-thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .pub-details {
@@ -498,7 +517,7 @@ img, iframe {
 }
 
 /* ==========================================================================
-   Projects / Notes / Demos Grid
+   Projects Grid & Card Styling
    ========================================================================== */
 .grid-cards {
   display: grid;
@@ -521,11 +540,23 @@ img, iframe {
   border-color: var(--border-hover);
 }
 
-.card-img {
+.card-img-wrapper {
   width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
+  height: 160px;
+  background: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.card-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .card-body {
@@ -595,6 +626,7 @@ img, iframe {
   }
 
   .pub-thumb {
+    width: 100%;
     max-width: 320px;
   }
 }

@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (featuredItems.length > 0) {
       featuredItems.forEach(item => {
         const clone = item.cloneNode(true);
-        // Ensure bibtex buttons inside clone also work correctly
         featuredContainer.appendChild(clone);
       });
     } else {
@@ -59,15 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
-  // 3. Scrollable Box Toggle ("Show All / Disable Scrolling")
+  // 3. Scrollable Box Toggle ("Show More" / "Show Less")
   // --------------------------------------------------------------------------
   document.querySelectorAll('.btn-toggle-scroll').forEach(btn => {
-    btn.addEventListener('click', (e) => {
+    btn.addEventListener('click', () => {
       const targetId = btn.getAttribute('data-target');
       const box = document.getElementById(targetId);
       if (box) {
         const isExpanded = box.classList.toggle('expanded');
-        btn.textContent = isExpanded ? 'Enable Scroll' : 'Show All / Expand';
+        btn.textContent = isExpanded ? 'Show Less' : 'Show More';
       }
     });
   });

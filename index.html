@@ -58,40 +58,44 @@
         <!-- Recent News -->
         <div style="margin-bottom: 2rem;">
           <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--text-main);">Recent News</h3>
-          <div id="news-scrollable-box" class="scrollable-box" style="max-height: 180px;">
-            <div class="news-list">
-              <div class="news-item">
-                <span class="news-date">Jul 2026</span>
-                <span class="news-text">Updated website design and layout reorganization!</span>
-              </div>
-              <div class="news-item">
-                <span class="news-date">Jun 2026</span>
-                <span class="news-text">Ambient Diffusion Policy awarded <em>Best Paper Award</em> at RSS 2026 Workshop on Data-Centric Robotics!</span>
-              </div>
-              <div class="news-item">
-                <span class="news-date">May 2026</span>
-                <span class="news-text">SceneSmith accepted as Spotlight paper at ICML 2026.</span>
-              </div>
-              <div class="news-item">
-                <span class="news-date">Feb 2026</span>
-                <span class="news-text">New preprint posted: "A Framework for Combining Optimization-Based and Analytic Inverse Kinematics".</span>
-              </div>
-              <div class="news-item">
-                <span class="news-date">Jan 2026</span>
-                <span class="news-text">Paper on Diffusion Policies accepted to ICRA 2026!</span>
+          <div class="box-wrapper">
+            <div id="news-scrollable-box" class="scrollable-box news-box">
+              <div class="news-list">
+                <div class="news-item">
+                  <span class="news-date">Jul 2026</span>
+                  <span class="news-text">Updated website design and layout reorganization!</span>
+                </div>
+                <div class="news-item">
+                  <span class="news-date">Jun 2026</span>
+                  <span class="news-text">Ambient Diffusion Policy awarded <em>Best Paper Award</em> at RSS 2026 Workshop on Data-Centric Robotics!</span>
+                </div>
+                <div class="news-item">
+                  <span class="news-date">May 2026</span>
+                  <span class="news-text">SceneSmith accepted as Spotlight paper at ICML 2026.</span>
+                </div>
+                <div class="news-item">
+                  <span class="news-date">Feb 2026</span>
+                  <span class="news-text">New preprint posted: "A Framework for Combining Optimization-Based and Analytic Inverse Kinematics".</span>
+                </div>
+                <div class="news-item">
+                  <span class="news-date">Jan 2026</span>
+                  <span class="news-text">Paper on Diffusion Policies accepted to ICRA 2026!</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="box-actions">
-            <button type="button" class="btn-toggle-scroll" data-target="news-scrollable-box">Show All / Expand</button>
+            <div class="box-actions">
+              <button type="button" class="btn-toggle-scroll" data-target="news-scrollable-box">Show More</button>
+            </div>
           </div>
         </div>
 
         <!-- Featured Videos -->
         <div style="margin-bottom: 2rem;">
           <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--text-main);">Featured Videos</h3>
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube-nocookie.com/embed/videoseries?si=dtQFzFHdzj3SOXfR&amp;list=PLU6BDl-vm1jT5MoTgS2AmHKIbziJpJV63" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Featured Videos Playlist"></iframe>
+          <div class="video-container-max">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube-nocookie.com/embed/videoseries?si=dtQFzFHdzj3SOXfR&amp;list=PLU6BDl-vm1jT5MoTgS2AmHKIbziJpJV63" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Featured Videos Playlist"></iframe>
+            </div>
           </div>
         </div>
 
@@ -110,118 +114,120 @@
 
       <!-- FULL PUBLICATION LIST SECTION -->
       <section id="publications">
-        <div class="section-title">
-          <span>Full Publications & Preprints</span>
-          <button type="button" class="btn-toggle-scroll" data-target="pub-scrollable-box">Show All / Expand</button>
-        </div>
+        <h2 class="section-title">Full Publications & Preprints</h2>
 
-        <div id="pub-scrollable-box" class="scrollable-box">
-          <div id="full-pub-list" class="pub-list">
+        <div class="box-wrapper">
+          <div id="pub-scrollable-box" class="scrollable-box pub-box">
+            <div id="full-pub-list" class="pub-list">
 
-            <!-- Dummy Paper 1 (Featured) -->
-            <div class="pub-item" data-featured="true">
-              <div class="pub-thumb">
-                <img src="images/ambient.gif" alt="Dummy Paper 1 thumbnail" />
-              </div>
-              <div class="pub-details">
-                <div class="pub-title">Dummy Paper 1: Ambient Diffusion Policy for Complex Robotics</div>
-                <div class="pub-venue">
-                  Under Review (2026) <span class="award"><i class="fas fa-trophy"></i> Best Paper Award</span>
+              <!-- Dummy Paper 1 (Featured) -->
+              <div class="pub-item" data-featured="true">
+                <div class="pub-thumb">
+                  <img src="images/ambient.gif" alt="Dummy Paper 1 thumbnail" />
                 </div>
-                <div class="pub-authors">
-                  Adam Wei, Nicholas Pfaff*, <b>Thomas Cohn*</b>, Arif Kerem Dayı, Constantinos Daskalakis, Giannis Daras, Russ Tedrake
-                </div>
-                <div class="pub-links">
-                  <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                  <a href="#" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                  <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                </div>
-                <div class="bibtex-block">@article{cohn2026dummy1,
+                <div class="pub-details">
+                  <div class="pub-title">Dummy Paper 1: Ambient Diffusion Policy for Complex Robotics</div>
+                  <div class="pub-venue">
+                    Under Review (2026) <span class="award"><i class="fas fa-trophy"></i> Best Paper Award</span>
+                  </div>
+                  <div class="pub-authors">
+                    Adam Wei, Nicholas Pfaff*, <b>Thomas Cohn*</b>, Arif Kerem Dayı, Constantinos Daskalakis, Giannis Daras, Russ Tedrake
+                  </div>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                    <a href="#" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                  </div>
+                  <div class="bibtex-block">@article{cohn2026dummy1,
   title={Dummy Paper 1: Ambient Diffusion Policy for Complex Robotics},
   author={Wei, Adam and Pfaff, Nicholas and Cohn, Thomas and Dayi, Arif Kerem and Daskalakis, Constantinos and Daras, Giannis and Tedrake, Russ},
   journal={arXiv preprint arXiv:2606.12365},
   year={2026}
 }</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Dummy Paper 2 (Featured) -->
-            <div class="pub-item" data-featured="true">
-              <div class="pub-thumb">
-                <img src="images/scenesmith.gif" alt="Dummy Paper 2 thumbnail" />
-              </div>
-              <div class="pub-details">
-                <div class="pub-title">Dummy Paper 2: SceneSmith: Agentic Generation of Indoor Scenes</div>
-                <div class="pub-venue">
-                  ICML 2026 <span class="award"><i class="fas fa-star"></i> Spotlight</span>
+              <!-- Dummy Paper 2 (Featured) -->
+              <div class="pub-item" data-featured="true">
+                <div class="pub-thumb">
+                  <img src="images/scenesmith.gif" alt="Dummy Paper 2 thumbnail" />
                 </div>
-                <div class="pub-authors">
-                  Nicholas Pfaff, <b>Thomas Cohn</b>, Sergey Zakharov, Rick Cory, Russ Tedrake
-                </div>
-                <div class="pub-links">
-                  <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                  <a href="#" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                  <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                </div>
-                <div class="bibtex-block">@inproceedings{cohn2026dummy2,
+                <div class="pub-details">
+                  <div class="pub-title">Dummy Paper 2: SceneSmith: Agentic Generation of Indoor Scenes</div>
+                  <div class="pub-venue">
+                    ICML 2026 <span class="award"><i class="fas fa-star"></i> Spotlight</span>
+                  </div>
+                  <div class="pub-authors">
+                    Nicholas Pfaff, <b>Thomas Cohn</b>, Sergey Zakharov, Rick Cory, Russ Tedrake
+                  </div>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                    <a href="#" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                  </div>
+                  <div class="bibtex-block">@inproceedings{cohn2026dummy2,
   title={Dummy Paper 2: SceneSmith: Agentic Generation of Indoor Scenes},
   author={Pfaff, Nicholas and Cohn, Thomas and Zakharov, Sergey and Cory, Rick and Tedrake, Russ},
   booktitle={ICML},
   year={2026}
 }</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Dummy Paper 3 -->
-            <div class="pub-item" data-featured="false">
-              <div class="pub-thumb">
-                <img src="images/bimanual_diffusion.gif" alt="Dummy Paper 3 thumbnail" />
-              </div>
-              <div class="pub-details">
-                <div class="pub-title">Dummy Paper 3: Kinematic Constraint Manifolds in Diffusion Policies</div>
-                <div class="pub-venue">ICRA 2026</div>
-                <div class="pub-authors">
-                  Lexi Foland, <b>Thomas Cohn</b>, Adam Wei, Nicholas Pfaff, Boyuan Chen, Russ Tedrake
+              <!-- Dummy Paper 3 -->
+              <div class="pub-item" data-featured="false">
+                <div class="pub-thumb">
+                  <img src="images/bimanual_diffusion.gif" alt="Dummy Paper 3 thumbnail" />
                 </div>
-                <div class="pub-links">
-                  <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                  <a href="#" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                  <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                </div>
-                <div class="bibtex-block">@inproceedings{cohn2026dummy3,
+                <div class="pub-details">
+                  <div class="pub-title">Dummy Paper 3: Kinematic Constraint Manifolds in Diffusion Policies</div>
+                  <div class="pub-venue">ICRA 2026</div>
+                  <div class="pub-authors">
+                    Lexi Foland, <b>Thomas Cohn</b>, Adam Wei, Nicholas Pfaff, Boyuan Chen, Russ Tedrake
+                  </div>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                    <a href="#" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                  </div>
+                  <div class="bibtex-block">@inproceedings{cohn2026dummy3,
   title={Dummy Paper 3: Kinematic Constraint Manifolds in Diffusion Policies},
   author={Foland, Lexi and Cohn, Thomas and Wei, Adam and Pfaff, Nicholas and Chen, Boyuan and Tedrake, Russ},
   booktitle={ICRA},
   year={2026}
 }</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Dummy Paper 4 -->
-            <div class="pub-item" data-featured="false">
-              <div class="pub-thumb">
-                <img src="images/symmetry.gif" alt="Dummy Paper 4 thumbnail" />
-              </div>
-              <div class="pub-details">
-                <div class="pub-title">Dummy Paper 4: Sampling-Based Motion Planning with Symmetries</div>
-                <div class="pub-venue">IROS 2025</div>
-                <div class="pub-authors">
-                  <b>Thomas Cohn</b>, Russ Tedrake
+              <!-- Dummy Paper 4 -->
+              <div class="pub-item" data-featured="false">
+                <div class="pub-thumb">
+                  <img src="images/symmetry.gif" alt="Dummy Paper 4 thumbnail" />
                 </div>
-                <div class="pub-links">
-                  <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                  <a href="#" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
-                  <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                </div>
-                <div class="bibtex-block">@inproceedings{cohn2025dummy4,
+                <div class="pub-details">
+                  <div class="pub-title">Dummy Paper 4: Sampling-Based Motion Planning with Symmetries</div>
+                  <div class="pub-venue">IROS 2025</div>
+                  <div class="pub-authors">
+                    <b>Thomas Cohn</b>, Russ Tedrake
+                  </div>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                    <a href="#" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                  </div>
+                  <div class="bibtex-block">@inproceedings{cohn2025dummy4,
   title={Dummy Paper 4: Sampling-Based Motion Planning with Symmetries},
   author={Cohn, Thomas and Tedrake, Russ},
   booktitle={IROS},
   year={2025}
 }</div>
+                </div>
               </div>
-            </div>
 
+            </div>
+          </div>
+          <div class="box-actions">
+            <button type="button" class="btn-toggle-scroll" data-target="pub-scrollable-box">Show More</button>
           </div>
         </div>
       </section>
@@ -232,7 +238,9 @@
         <div class="grid-cards">
           
           <div class="card">
-            <img src="images/6.8210.png" alt="6.8210 Final Project" class="card-img" />
+            <div class="card-img-wrapper">
+              <img src="images/6.8210.png" alt="6.8210 Final Project" class="card-img" />
+            </div>
             <div class="card-body">
               <div class="card-title">6.8210 Final Project: Quadrotor Shared-Load Carrying (2023)</div>
               <div class="card-desc">With Seiji Shaw. Cooperative control of multiple quadrotors tethered to a slung load.</div>
@@ -244,7 +252,9 @@
           </div>
 
           <div class="card">
-            <img src="images/graphslam.png" alt="EECS 467 Final Project" class="card-img" />
+            <div class="card-img-wrapper">
+              <img src="images/graphslam.png" alt="EECS 467 Final Project" class="card-img" />
+            </div>
             <div class="card-body">
               <div class="card-title">EECS 467 Final Project: Large Scale Mapping (2022)</div>
               <div class="card-desc">With John Rosner. Robotic mapping with ICP scan matching, loop closure, and pose graph optimization.</div>
@@ -256,7 +266,9 @@
           </div>
 
           <div class="card">
-            <img src="images/og_slam.gif" alt="Occupancy Grid SLAM" class="card-img" />
+            <div class="card-img-wrapper">
+              <img src="images/og_slam.gif" alt="Occupancy Grid SLAM" class="card-img" />
+            </div>
             <div class="card-body">
               <div class="card-title">Occupancy Grid SLAM in JavaScript (2021-2022)</div>
               <div class="card-desc">Interactive browser simulation of occupancy grid SLAM with particle filter localization.</div>
@@ -268,7 +280,9 @@
           </div>
 
           <div class="card">
-            <img src="images/monocularslam.png" alt="Monocular SLAM" class="card-img" />
+            <div class="card-img-wrapper">
+              <img src="images/monocularslam.png" alt="Monocular SLAM" class="card-img" />
+            </div>
             <div class="card-body">
               <div class="card-title">EECS 442 Final Project: Monocular SLAM (2021)</div>
               <div class="card-desc">With Nicholas Konovalenko, Neil Gurnani, James Doredla. Constructing sparse 3D map from single camera video.</div>
@@ -280,7 +294,9 @@
           </div>
 
           <div class="card">
-            <img src="images/piano.png" alt="Interactive Piano Lights" class="card-img" />
+            <div class="card-img-wrapper">
+              <img src="images/piano.png" alt="Interactive Piano Lights" class="card-img" />
+            </div>
             <div class="card-body">
               <div class="card-title">Interactive Piano Lights (2020)</div>
               <div class="card-desc">Maker project reading MIDI output from an electric keyboard to control LEDs.</div>
@@ -292,7 +308,9 @@
           </div>
 
           <div class="card">
-            <img src="images/drum.png" alt="Interactive Drum Lights" class="card-img" />
+            <div class="card-img-wrapper">
+              <img src="images/drum.png" alt="Interactive Drum Lights" class="card-img" />
+            </div>
             <div class="card-body">
               <div class="card-title">Interactive Drum Lights (2019)</div>
               <div class="card-desc">Maker project detecting drum notes with piezoelectric sensor to control LEDs.</div>
