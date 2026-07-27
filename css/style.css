@@ -290,7 +290,6 @@ img, iframe {
   max-height: 480px;
 }
 
-/* Explicit override when expanded so inline style or class constraints are removed */
 .scrollable-box.expanded {
   max-height: none !important;
   overflow-y: visible !important;
@@ -461,6 +460,7 @@ img, iframe {
   color: var(--accent-color);
   font-weight: 500;
   cursor: pointer;
+  white-space: nowrap; /* Prevents text from breaking internally into 2 lines */
 }
 
 .pub-link-btn:hover {
@@ -582,6 +582,7 @@ img, iframe {
 
 .card-links {
   display: flex;
+  flex-wrap: wrap; /* Allows tags to flow onto multiple lines cleanly when needed */
   gap: 0.5rem;
   margin-top: 0.5rem;
 }
