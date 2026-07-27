@@ -5,8 +5,8 @@
   --bg-color: #ffffff;
   --bg-secondary: #f8f9fa;
   --bg-card: #ffffff;
-  --border-color: #e5e7eb;
-  --border-hover: #d1d5db;
+  --border-color: #94a3b8;
+  --border-hover: #475569;
   --text-main: #111827;
   --text-muted: #4b5563;
   --text-subtle: #6b7280;
@@ -16,8 +16,8 @@
   --badge-text: #1e40af;
   --badge-gold-bg: #fef9c3;
   --badge-gold-text: #854d0e;
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.08);
   --radius: 12px;
   --radius-sm: 6px;
   --transition-speed: 0.2s;
@@ -294,10 +294,12 @@ img, iframe {
 
 .scrollable-box {
   overflow-y: auto;
-  border: 1px solid var(--border-color);
+  overflow-anchor: none;
+  border: 2.5px solid var(--border-color);
   border-radius: var(--radius);
   background: var(--bg-card);
   padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
   transition: max-height 0.35s ease-in-out;
 }
 
@@ -405,10 +407,24 @@ img, iframe {
 }
 
 .pub-section-subtitle {
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
   color: var(--text-main);
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pub-section-subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1.1rem;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 
 .pub-list {
@@ -423,6 +439,7 @@ img, iframe {
   gap: 1.25rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border-color);
+  overflow-anchor: none;
 }
 
 .pub-item:last-child {
@@ -593,6 +610,7 @@ img, iframe {
 
 .bibtex-block {
   display: none;
+  overflow-anchor: none;
   margin-top: 0.5rem;
   padding: 0.6rem 0.75rem;
   background: var(--bg-secondary);
