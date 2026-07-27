@@ -265,7 +265,7 @@ img, iframe {
 }
 
 /* ==========================================================================
-   Scrollable Container Component (News & Publications)
+   Scrollable Container Component (News, Publications, Projects)
    ========================================================================== */
 .box-wrapper {
   display: flex;
@@ -288,6 +288,10 @@ img, iframe {
 
 .pub-box {
   max-height: 480px;
+}
+
+.projects-box {
+  max-height: 620px;
 }
 
 .scrollable-box.expanded {
@@ -460,7 +464,7 @@ img, iframe {
   color: var(--accent-color);
   font-weight: 500;
   cursor: pointer;
-  white-space: nowrap; /* Prevents text from breaking internally into 2 lines */
+  white-space: nowrap;
 }
 
 .pub-link-btn:hover {
@@ -582,7 +586,7 @@ img, iframe {
 
 .card-links {
   display: flex;
-  flex-wrap: wrap; /* Allows tags to flow onto multiple lines cleanly when needed */
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 0.5rem;
 }
