@@ -514,13 +514,34 @@ img, iframe {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  background: var(--badge-gold-bg);
-  color: var(--badge-gold-text);
-  padding: 0.15rem 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  background: var(--bg-tertiary);
+  padding: 0.15rem 0.45rem;
   border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin-left: 0.4rem;
+  margin-left: 0.35rem;
+}
+
+.pub-awards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+.pub-awards .award {
+  margin-left: 0;
+}
+
+.award.award-accepted {
+  color: #15803d;
+  background: rgba(21, 128, 61, 0.12);
+}
+
+[data-theme="dark"] .award.award-accepted {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.15);
 }
 
 .pub-authors {
