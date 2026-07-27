@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thomas Cohn</title>
   <meta name="description" content="Thomas Cohn - Computer Science PhD student at MIT." />
-  
+
   <!-- FontAwesome & Academicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
-  
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- No-JS Fallback -->
   <noscript>
     <style>
-      .scrollable-box { max-height: none !important; overflow-y: visible !important; }
-      .btn-toggle-scroll { display: none !important; }
-      .bibtex-block { display: block !important; }
+      .scrollable-box {
+        max-height: none !important;
+        overflow-y: visible !important;
+      }
+
+      .btn-toggle-scroll {
+        display: none !important;
+      }
+
+      .bibtex-block {
+        display: block !important;
+      }
     </style>
   </noscript>
 </head>
+
 <body>
   <div class="site-container">
     <!-- Sidebar / Top-line -->
@@ -31,11 +42,12 @@
           <img src="images/Headshot.jpg" alt="Thomas Cohn" class="avatar-img" />
         </div>
         <h1 class="profile-name">Thomas Cohn</h1>
-        <ul class="profile-bio-list">
-          <li>Computer Science PhD Candidate at MIT</li>
-          <li>Advised by <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a></li>
-          <li>Member of the <a href="https://groups.csail.mit.edu/locomotion/index.html" target="_blank">Robot Locomotion Group</a></li>
-        </ul>
+        <div class="profile-tagline">Robotics &bull; Math &bull; CS</div>
+        <p class="profile-bio">
+          Computer Science PhD candidate at MIT, advised by <a href="https://groups.csail.mit.edu/locomotion/russt.html"
+            target="_blank">Russ Tedrake</a>. Member of the <a href="https://groups.csail.mit.edu/locomotion/index.html"
+            target="_blank">Robot Locomotion Group</a>.
+        </p>
 
         <nav class="profile-nav">
           <a href="#recent-news" class="nav-link"><i class="fas fa-newspaper"></i> Recent News</a>
@@ -47,10 +59,13 @@
           <a href="#js-demos" class="nav-link"><i class="fas fa-code"></i> JS Demos</a>
           <a href="about_me.html" class="nav-link"><i class="fas fa-user"></i> About Me</a>
           <a href="Resources/cv.pdf" class="nav-link" target="_blank"><i class="far fa-file-pdf"></i> CV (PDF)</a>
-          <a href="https://blog.tommycohn.com/" class="nav-link" target="_blank"><i class="fas fa-blog"></i> Research Blog</a>
-          <a href="https://scholar.google.com/citations?user=1Eg4C90AAAAJ" class="nav-link" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+          <a href="https://blog.tommycohn.com/" class="nav-link" target="_blank"><i class="fas fa-blog"></i> Research
+            Blog</a>
+          <a href="https://scholar.google.com/citations?user=1Eg4C90AAAAJ" class="nav-link" target="_blank"><i
+              class="ai ai-google-scholar"></i> Google Scholar</a>
           <a href="https://github.com/cohnt/" class="nav-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/thomas-cohn-hello/" class="nav-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://www.linkedin.com/in/thomas-cohn-hello/" class="nav-link" target="_blank"><i
+              class="fab fa-linkedin"></i> LinkedIn</a>
         </nav>
 
         <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle theme">
@@ -62,7 +77,7 @@
 
     <!-- Main Content Area -->
     <main class="main-content">
-      
+
       <!-- RECENT NEWS SECTION -->
       <section id="recent-news">
         <h2 class="section-title">Recent News</h2>
@@ -75,7 +90,8 @@
               </div>
               <div class="news-item">
                 <span class="news-date">Jun 2026</span>
-                <span class="news-text">Ambient Diffusion Policy awarded <em>Best Paper Award</em> at RSS 2026 Workshop on Data-Centric Robotics!</span>
+                <span class="news-text">Ambient Diffusion Policy awarded <em>Best Paper Award</em> at RSS 2026 Workshop
+                  on Data-Centric Robotics!</span>
               </div>
               <div class="news-item">
                 <span class="news-date">May 2026</span>
@@ -83,7 +99,8 @@
               </div>
               <div class="news-item">
                 <span class="news-date">Feb 2026</span>
-                <span class="news-text">New preprint posted: "A Framework for Combining Optimization-Based and Analytic Inverse Kinematics".</span>
+                <span class="news-text">New preprint posted: "A Framework for Combining Optimization-Based and Analytic
+                  Inverse Kinematics".</span>
               </div>
               <div class="news-item">
                 <span class="news-date">Jan 2026</span>
@@ -116,7 +133,10 @@
         <h2 class="section-title">Featured Videos</h2>
         <div class="video-container-max">
           <div class="video-wrapper">
-            <iframe src="https://www.youtube-nocookie.com/embed/videoseries?si=dtQFzFHdzj3SOXfR&amp;list=PLU6BDl-vm1jT5MoTgS2AmHKIbziJpJV63" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Featured Videos Playlist"></iframe>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/videoseries?si=dtQFzFHdzj3SOXfR&amp;list=PLU6BDl-vm1jT5MoTgS2AmHKIbziJpJV63"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen title="Featured Videos Playlist"></iframe>
           </div>
         </div>
       </section>
@@ -140,19 +160,22 @@
                     Under Review (2026) <span class="award"><i class="fas fa-trophy"></i> Best Paper Award</span>
                   </div>
                   <div class="pub-authors">
-                    Adam Wei, Nicholas Pfaff*, <b>Thomas Cohn*</b>, Arif Kerem Dayı, Constantinos Daskalakis, Giannis Daras, Russ Tedrake
+                    Adam Wei, Nicholas Pfaff*, <b>Thomas Cohn*</b>, Arif Kerem Dayı, Constantinos Daskalakis, Giannis
+                    Daras, Russ Tedrake
                   </div>
                   <div class="pub-links">
                     <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
                     <a href="#" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i>
+                      BibTeX</button>
                   </div>
                   <div class="bibtex-block">@article{cohn2026dummy1,
-  title={Dummy Paper 1: Ambient Diffusion Policy for Complex Robotics},
-  author={Wei, Adam and Pfaff, Nicholas and Cohn, Thomas and Dayi, Arif Kerem and Daskalakis, Constantinos and Daras, Giannis and Tedrake, Russ},
-  journal={arXiv preprint arXiv:2606.12365},
-  year={2026}
-}</div>
+                    title={Dummy Paper 1: Ambient Diffusion Policy for Complex Robotics},
+                    author={Wei, Adam and Pfaff, Nicholas and Cohn, Thomas and Dayi, Arif Kerem and Daskalakis,
+                    Constantinos and Daras, Giannis and Tedrake, Russ},
+                    journal={arXiv preprint arXiv:2606.12365},
+                    year={2026}
+                    }</div>
                 </div>
               </div>
 
@@ -172,14 +195,15 @@
                   <div class="pub-links">
                     <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
                     <a href="#" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i>
+                      BibTeX</button>
                   </div>
                   <div class="bibtex-block">@inproceedings{cohn2026dummy2,
-  title={Dummy Paper 2: SceneSmith: Agentic Generation of Indoor Scenes},
-  author={Pfaff, Nicholas and Cohn, Thomas and Zakharov, Sergey and Cory, Rick and Tedrake, Russ},
-  booktitle={ICML},
-  year={2026}
-}</div>
+                    title={Dummy Paper 2: SceneSmith: Agentic Generation of Indoor Scenes},
+                    author={Pfaff, Nicholas and Cohn, Thomas and Zakharov, Sergey and Cory, Rick and Tedrake, Russ},
+                    booktitle={ICML},
+                    year={2026}
+                    }</div>
                 </div>
               </div>
 
@@ -197,14 +221,16 @@
                   <div class="pub-links">
                     <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
                     <a href="#" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i>
+                      BibTeX</button>
                   </div>
                   <div class="bibtex-block">@inproceedings{cohn2026dummy3,
-  title={Dummy Paper 3: Kinematic Constraint Manifolds in Diffusion Policies},
-  author={Foland, Lexi and Cohn, Thomas and Wei, Adam and Pfaff, Nicholas and Chen, Boyuan and Tedrake, Russ},
-  booktitle={ICRA},
-  year={2026}
-}</div>
+                    title={Dummy Paper 3: Kinematic Constraint Manifolds in Diffusion Policies},
+                    author={Foland, Lexi and Cohn, Thomas and Wei, Adam and Pfaff, Nicholas and Chen, Boyuan and
+                    Tedrake, Russ},
+                    booktitle={ICRA},
+                    year={2026}
+                    }</div>
                 </div>
               </div>
 
@@ -222,14 +248,15 @@
                   <div class="pub-links">
                     <a href="#" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
                     <a href="#" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
-                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                    <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i>
+                      BibTeX</button>
                   </div>
                   <div class="bibtex-block">@inproceedings{cohn2025dummy4,
-  title={Dummy Paper 4: Sampling-Based Motion Planning with Symmetries},
-  author={Cohn, Thomas and Tedrake, Russ},
-  booktitle={IROS},
-  year={2025}
-}</div>
+                    title={Dummy Paper 4: Sampling-Based Motion Planning with Symmetries},
+                    author={Cohn, Thomas and Tedrake, Russ},
+                    booktitle={IROS},
+                    year={2025}
+                    }</div>
                 </div>
               </div>
 
@@ -254,12 +281,16 @@
                 </div>
                 <div class="card-body">
                   <div class="card-title">6.8210 Final Project: Quadrotor Shared-Load Carrying (2023)</div>
-                  <div class="card-desc">With Seiji Shaw. Cooperative control (including stabilization and trajectory planning) of multiple quadrotors, tethered to a slung load.</div>
+                  <div class="card-desc">With Seiji Shaw. Cooperative control (including stabilization and trajectory
+                    planning) of multiple quadrotors, tethered to a slung load.</div>
                   <div class="card-links">
                     <a href="projects/6.8210.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                    <a href="https://github.com/cohnt/6.8210-Final-Project-Lifting-Heavy-Objects-with-Teams-of-Quadrotors/blob/main/6_8210_Final_Project_Report.pdf" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Report</a>
-                    <a href="https://www.youtube.com/playlist?list=PLU6BDl-vm1jQolVMZFbHOre19acIl-vtI" class="pub-link-btn" target="_blank"><i class="fab fa-youtube"></i> Playlist</a>
-                    <a href="https://github.com/cohnt/6.8210-Final-Project-Lifting-Heavy-Objects-with-Teams-of-Quadrotors" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://github.com/cohnt/6.8210-Final-Project-Lifting-Heavy-Objects-with-Teams-of-Quadrotors/blob/main/6_8210_Final_Project_Report.pdf"
+                      class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Report</a>
+                    <a href="https://www.youtube.com/playlist?list=PLU6BDl-vm1jQolVMZFbHOre19acIl-vtI"
+                      class="pub-link-btn" target="_blank"><i class="fab fa-youtube"></i> Playlist</a>
+                    <a href="https://github.com/cohnt/6.8210-Final-Project-Lifting-Heavy-Objects-with-Teams-of-Quadrotors"
+                      class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
                   </div>
                 </div>
               </div>
@@ -270,12 +301,16 @@
                 </div>
                 <div class="card-body">
                   <div class="card-title">EECS 467 Final Project: Large Scale Mapping with Loop Closure (2022)</div>
-                  <div class="card-desc">With John Rosner. Robotic mapping with iterative closest point scan matching, automatic loop closure detection, and pose graph optimization.</div>
+                  <div class="card-desc">With John Rosner. Robotic mapping with iterative closest point scan matching,
+                    automatic loop closure detection, and pose graph optimization.</div>
                   <div class="card-links">
                     <a href="projects/graphslam.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                    <a href="https://github.com/cohnt/ICP-SLAM-with-Loop-Closure/blob/master/final-report.pdf" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Report</a>
-                    <a href="https://youtu.be/uV2OP7v6lY0" class="pub-link-btn" target="_blank"><i class="fab fa-youtube"></i> Video</a>
-                    <a href="https://github.com/cohnt/ICP-SLAM-with-Loop-Closure" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://github.com/cohnt/ICP-SLAM-with-Loop-Closure/blob/master/final-report.pdf"
+                      class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Report</a>
+                    <a href="https://youtu.be/uV2OP7v6lY0" class="pub-link-btn" target="_blank"><i
+                        class="fab fa-youtube"></i> Video</a>
+                    <a href="https://github.com/cohnt/ICP-SLAM-with-Loop-Closure" class="pub-link-btn"
+                      target="_blank"><i class="fab fa-github"></i> Code</a>
                   </div>
                 </div>
               </div>
@@ -286,10 +321,13 @@
                 </div>
                 <div class="card-body">
                   <div class="card-title">Occupancy Grid SLAM in JavaScript (2021-2022)</div>
-                  <div class="card-desc">A simulation of occupancy grid simultaneous localization and mapping, with particle filter Monte Carlo localization.</div>
+                  <div class="card-desc">A simulation of occupancy grid simultaneous localization and mapping, with
+                    particle filter Monte Carlo localization.</div>
                   <div class="card-links">
-                    <a href="http://tommycohn.com/Occupancy-Grid-SLAM-JS/index.html" class="pub-link-btn" target="_blank"><i class="fas fa-laptop-code"></i> Demo</a>
-                    <a href="https://github.com/cohnt/Occupancy-Grid-SLAM-JS/" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="http://tommycohn.com/Occupancy-Grid-SLAM-JS/index.html" class="pub-link-btn"
+                      target="_blank"><i class="fas fa-laptop-code"></i> Demo</a>
+                    <a href="https://github.com/cohnt/Occupancy-Grid-SLAM-JS/" class="pub-link-btn" target="_blank"><i
+                        class="fab fa-github"></i> Code</a>
                   </div>
                 </div>
               </div>
@@ -300,11 +338,15 @@
                 </div>
                 <div class="card-body">
                   <div class="card-title">EECS 442 Final Project: Monocular SLAM (2021)</div>
-                  <div class="card-desc">With Nicholas Konovalenko, Neil Gurnani, and James Doredla. Constructing a sparse 3d map with a single camera, by extracting image features and triangulating them.</div>
+                  <div class="card-desc">With Nicholas Konovalenko, Neil Gurnani, and James Doredla. Constructing a
+                    sparse 3d map with a single camera, by extracting image features and triangulating them.</div>
                   <div class="card-links">
-                    <a href="projects/monocularslam.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                    <a href="https://web.eecs.umich.edu/~justincj/teaching/eecs442/projects/WI2021/pdfs/070.pdf" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Writeup</a>
-                    <a href="https://github.com/neil-gurnani/eecs-442-slam-project" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="projects/monocularslam.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project
+                      Page</a>
+                    <a href="https://web.eecs.umich.edu/~justincj/teaching/eecs442/projects/WI2021/pdfs/070.pdf"
+                      class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Writeup</a>
+                    <a href="https://github.com/neil-gurnani/eecs-442-slam-project" class="pub-link-btn"
+                      target="_blank"><i class="fab fa-github"></i> Code</a>
                   </div>
                 </div>
               </div>
@@ -315,7 +357,8 @@
                 </div>
                 <div class="card-body">
                   <div class="card-title">EECS 442 (Computer Vision) Course Projects (2021)</div>
-                  <div class="card-desc">Assorted class projects for EECS 442 at the University of Michigan, including homography warping and semantic image segmentation.</div>
+                  <div class="card-desc">Assorted class projects for EECS 442 at the University of Michigan, including
+                    homography warping and semantic image segmentation.</div>
                   <div class="card-links">
                     <a href="projects/eecs442.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
                   </div>
@@ -328,11 +371,15 @@
                 </div>
                 <div class="card-body">
                   <div class="card-title">EECS 498-005 Final Project: Head Pose Gesture Recognition (2021)</div>
-                  <div class="card-desc">With Lance Ying. Tracking head pose (as obtained via facial landmarks) for gesture recognition.</div>
+                  <div class="card-desc">With Lance Ying. Tracking head pose (as obtained via facial landmarks) for
+                    gesture recognition.</div>
                   <div class="card-links">
-                    <a href="projects/headgesture.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                    <a href="https://drive.google.com/file/d/1AVlwgXs67TOGz-cT55T3TQDrktR0HV6I/view" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Writeup</a>
-                    <a href="https://github.com/cohnt/head-tracking-gesture-recognition" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="projects/headgesture.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project
+                      Page</a>
+                    <a href="https://drive.google.com/file/d/1AVlwgXs67TOGz-cT55T3TQDrktR0HV6I/view"
+                      class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Writeup</a>
+                    <a href="https://github.com/cohnt/head-tracking-gesture-recognition" class="pub-link-btn"
+                      target="_blank"><i class="fab fa-github"></i> Code</a>
                   </div>
                 </div>
               </div>
@@ -342,11 +389,14 @@
                   <img src="images/ccpf.png" alt="CCPF Deformable Object Pose Estimation" class="card-img" />
                 </div>
                 <div class="card-body">
-                  <div class="card-title">Coordinate Chart Particle Filter for Deformable Object Pose Estimation (2020-2021)</div>
-                  <div class="card-desc">Learning a low-dimensional manifold representation of deformable objects to estimate pose with a particle filter.</div>
+                  <div class="card-title">Coordinate Chart Particle Filter for Deformable Object Pose Estimation
+                    (2020-2021)</div>
+                  <div class="card-desc">Learning a low-dimensional manifold representation of deformable objects to
+                    estimate pose with a particle filter.</div>
                   <div class="card-links">
                     <a href="projects/ccpf.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                    <a href="https://github.com/cohnt/Deformable-Object-Manifold-Learning" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://github.com/cohnt/Deformable-Object-Manifold-Learning" class="pub-link-btn"
+                      target="_blank"><i class="fab fa-github"></i> Code</a>
                   </div>
                 </div>
               </div>
@@ -357,10 +407,12 @@
                 </div>
                 <div class="card-body">
                   <div class="card-title">EECS 367 (Intro to Autonomous Robotics) Course Projects (2020)</div>
-                  <div class="card-desc">Assorted class projects for EECS 367 at UMich, including A* search, forward & inverse kinematics, and RRT planning.</div>
+                  <div class="card-desc">Assorted class projects for EECS 367 at UMich, including A* search, forward &
+                    inverse kinematics, and RRT planning.</div>
                   <div class="card-links">
                     <a href="projects/eecs367.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                    <a href="https://youtube.com/playlist?list=PLU6BDl-vm1jTHYZwrjQczLyQQ_IL8obMQ" class="pub-link-btn" target="_blank"><i class="fab fa-youtube"></i> Playlist</a>
+                    <a href="https://youtube.com/playlist?list=PLU6BDl-vm1jTHYZwrjQczLyQQ_IL8obMQ" class="pub-link-btn"
+                      target="_blank"><i class="fab fa-youtube"></i> Playlist</a>
                   </div>
                 </div>
               </div>
@@ -371,10 +423,12 @@
                 </div>
                 <div class="card-body">
                   <div class="card-title">Interactive Piano Lights (2020)</div>
-                  <div class="card-desc">A maker project that reads MIDI output from an electric keyboard, in order to control LEDs.</div>
+                  <div class="card-desc">A maker project that reads MIDI output from an electric keyboard, in order to
+                    control LEDs.</div>
                   <div class="card-links">
                     <a href="projects/piano.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                    <a href="https://github.com/cohnt/midi-piano-lights" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://github.com/cohnt/midi-piano-lights" class="pub-link-btn" target="_blank"><i
+                        class="fab fa-github"></i> Code</a>
                   </div>
                 </div>
               </div>
@@ -385,11 +439,14 @@
                 </div>
                 <div class="card-body">
                   <div class="card-title">Particle-Based Localization and Grasping of Grocery Bags (2018-2019)</div>
-                  <div class="card-desc">Detecting handles of a paper grocery bag in video feed and triangulating 3D locations with a particle filter for robot grasping.</div>
+                  <div class="card-desc">Detecting handles of a paper grocery bag in video feed and triangulating 3D
+                    locations with a particle filter for robot grasping.</div>
                   <div class="card-links">
                     <a href="projects/grocery.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                    <a href="https://github.com/cohnt/Particle-Based-Localization" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
-                    <a href="https://www.youtube.com/watch?v=sxgNvvJMJZw" class="pub-link-btn" target="_blank"><i class="fab fa-youtube"></i> Video</a>
+                    <a href="https://github.com/cohnt/Particle-Based-Localization" class="pub-link-btn"
+                      target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://www.youtube.com/watch?v=sxgNvvJMJZw" class="pub-link-btn" target="_blank"><i
+                        class="fab fa-youtube"></i> Video</a>
                   </div>
                 </div>
               </div>
@@ -399,12 +456,17 @@
                   <img src="images/hurricanes.png" alt="Hurricane Track Modeling" class="card-img" />
                 </div>
                 <div class="card-body">
-                  <div class="card-title">Stats 406 Final Project: Hurricane Track Modeling via Manifold Learning (2019)</div>
-                  <div class="card-desc">Modeling Atlantic hurricane tracks with manifold learning and nonparametric kernel regression.</div>
+                  <div class="card-title">Stats 406 Final Project: Hurricane Track Modeling via Manifold Learning (2019)
+                  </div>
+                  <div class="card-desc">Modeling Atlantic hurricane tracks with manifold learning and nonparametric
+                    kernel regression.</div>
                   <div class="card-links">
-                    <a href="projects/hurricanes.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                    <a href="https://raw.githubusercontent.com/cohnt/stats406_final_project/master/report/main.pdf" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Writeup</a>
-                    <a href="https://github.com/cohnt/stats406_final_project" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="projects/hurricanes.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project
+                      Page</a>
+                    <a href="https://raw.githubusercontent.com/cohnt/stats406_final_project/master/report/main.pdf"
+                      class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Writeup</a>
+                    <a href="https://github.com/cohnt/stats406_final_project" class="pub-link-btn" target="_blank"><i
+                        class="fab fa-github"></i> Code</a>
                   </div>
                 </div>
               </div>
@@ -415,7 +477,8 @@
                 </div>
                 <div class="card-body">
                   <div class="card-title">Interactive Drum Lights (2019)</div>
-                  <div class="card-desc">A maker project that detects drum notes with a piezoelectric sensor, in order to control LEDs.</div>
+                  <div class="card-desc">A maker project that detects drum notes with a piezoelectric sensor, in order
+                    to control LEDs.</div>
                   <div class="card-links">
                     <a href="projects/drum.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
                   </div>
@@ -428,10 +491,12 @@
                 </div>
                 <div class="card-body">
                   <div class="card-title">SLAM with Iterative Closest Point (2016-2017)</div>
-                  <div class="card-desc">Matching LIDAR scans with iterative closest point so a robot can map its surroundings in an unknown environment.</div>
+                  <div class="card-desc">Matching LIDAR scans with iterative closest point so a robot can map its
+                    surroundings in an unknown environment.</div>
                   <div class="card-links">
                     <a href="projects/icpslam.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                    <a href="https://github.com/cohnt/M4Progress" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://github.com/cohnt/M4Progress" class="pub-link-btn" target="_blank"><i
+                        class="fab fa-github"></i> Code</a>
                   </div>
                 </div>
               </div>
@@ -448,43 +513,69 @@
       <section id="math-notes">
         <h2 class="section-title">Math Notes</h2>
         <p style="margin-bottom: 1rem; color: var(--text-muted); font-size: 0.95rem;">
-          I've partially or completely typeset my lecture notes for several of the math classes I have taken. I've included links to Google Drive folders containing the PDFs, and links to the git repositories containing the LaTeX source files. (Classes listed in reverse chronological order.)
+          I've partially or completely typeset my lecture notes for several of the math classes I have taken. I've
+          included links to Google Drive folders containing the PDFs, and links to the git repositories containing the
+          LaTeX source files. (Classes listed in reverse chronological order.)
         </p>
-        <ul style="display: flex; flex-direction: column; gap: 0.75rem; padding-left: 1.2rem; color: var(--text-main); font-size: 0.93rem;">
+        <ul
+          style="display: flex; flex-direction: column; gap: 0.75rem; padding-left: 1.2rem; color: var(--text-main); font-size: 0.93rem;">
           <li>
-            <a href="https://drive.google.com/drive/folders/1TgWRFC2Yf2-Xq30k5XcWfNVPfQK-ZBwG?usp=sharing" target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp; 
-            <a href="https://github.com/cohnt/Math-635-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX Source</a> &nbsp;&bull;&nbsp; 
-            Math 635 (Riemannian Geometry) Taught by <a href="https://lsa.umich.edu/math/people/faculty/uribe.html" target="_blank">Professor Alejandro Uribe</a> in 2021.
+            <a href="https://drive.google.com/drive/folders/1TgWRFC2Yf2-Xq30k5XcWfNVPfQK-ZBwG?usp=sharing"
+              target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp;
+            <a href="https://github.com/cohnt/Math-635-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX
+              Source</a> &nbsp;&bull;&nbsp;
+            Math 635 (Riemannian Geometry) Taught by <a href="https://lsa.umich.edu/math/people/faculty/uribe.html"
+              target="_blank">Professor Alejandro Uribe</a> in 2021.
           </li>
           <li>
-            <a href="https://drive.google.com/drive/folders/1ge7YUQIg7MsrQ8SMsQ4Z9ASZj5Yj9yfH?usp=sharing" target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp; 
-            <a href="https://github.com/cohnt/Math-591-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX Source</a> &nbsp;&bull;&nbsp; 
-            Math 591 (Differentiable Manifolds) Taught by <a href="https://lsa.umich.edu/math/people/faculty/uribe.html" target="_blank">Professor Alejandro Uribe</a> in 2020.
+            <a href="https://drive.google.com/drive/folders/1ge7YUQIg7MsrQ8SMsQ4Z9ASZj5Yj9yfH?usp=sharing"
+              target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp;
+            <a href="https://github.com/cohnt/Math-591-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX
+              Source</a> &nbsp;&bull;&nbsp;
+            Math 591 (Differentiable Manifolds) Taught by <a href="https://lsa.umich.edu/math/people/faculty/uribe.html"
+              target="_blank">Professor Alejandro Uribe</a> in 2020.
           </li>
           <li>
-            <a href="https://drive.google.com/drive/folders/19jmJU0kUoLjWg7X7Vkj6CKK66AqZ_Ka3?usp=sharing" target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp; 
-            <a href="https://github.com/cohnt/Math-493-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX Source</a> &nbsp;&bull;&nbsp; 
-            Math 493 (Abstract Algebra/Group Theory) Taught by <a href="https://lsa.umich.edu/math/people/faculty/asnowden.html" target="_blank">Professor Andrew Snowden</a> in 2019.
+            <a href="https://drive.google.com/drive/folders/19jmJU0kUoLjWg7X7Vkj6CKK66AqZ_Ka3?usp=sharing"
+              target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp;
+            <a href="https://github.com/cohnt/Math-493-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX
+              Source</a> &nbsp;&bull;&nbsp;
+            Math 493 (Abstract Algebra/Group Theory) Taught by <a
+              href="https://lsa.umich.edu/math/people/faculty/asnowden.html" target="_blank">Professor Andrew
+              Snowden</a> in 2019.
           </li>
           <li>
-            <a href="https://drive.google.com/drive/folders/1uCyxSCWTgEcUYhy35CaiHU_Le9SUjyiW?usp=sharing" target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp; 
-            <a href="https://github.com/cohnt/Math-396-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX Source</a> &nbsp;&bull;&nbsp; 
-            Math 396 (Honors Analysis II) Taught by <a href="https://lsa.umich.edu/math/people/faculty/barrett.html" target="_blank">Professor David Barrett</a> in 2019.
+            <a href="https://drive.google.com/drive/folders/1uCyxSCWTgEcUYhy35CaiHU_Le9SUjyiW?usp=sharing"
+              target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp;
+            <a href="https://github.com/cohnt/Math-396-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX
+              Source</a> &nbsp;&bull;&nbsp;
+            Math 396 (Honors Analysis II) Taught by <a href="https://lsa.umich.edu/math/people/faculty/barrett.html"
+              target="_blank">Professor David Barrett</a> in 2019.
           </li>
           <li>
-            <a href="https://drive.google.com/drive/folders/1nuGbVQTNcok5V2s-YYzC4klfmPETo0q8?usp=sharing" target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp; 
-            <a href="https://github.com/cohnt/Math-565-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX Source</a> &nbsp;&bull;&nbsp; 
-            Math 565 (Graph Theory) Taught by <a href="https://sites.google.com/site/dannynguyenmath/" target="_blank">Dr. Danny Nguyen</a> in 2018.
+            <a href="https://drive.google.com/drive/folders/1nuGbVQTNcok5V2s-YYzC4klfmPETo0q8?usp=sharing"
+              target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp;
+            <a href="https://github.com/cohnt/Math-565-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX
+              Source</a> &nbsp;&bull;&nbsp;
+            Math 565 (Graph Theory) Taught by <a href="https://sites.google.com/site/dannynguyenmath/"
+              target="_blank">Dr. Danny Nguyen</a> in 2018.
           </li>
           <li>
-            <a href="https://drive.google.com/drive/folders/1oreFsJu05_uE-OuI6LiFeVn49ZtF8iON?usp=sharing" target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp; 
-            <a href="https://github.com/cohnt/Math-395-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX Source</a> &nbsp;&bull;&nbsp; 
-            Math 395 (Honors Analysis I) Taught by <a href="https://lsa.umich.edu/math/people/faculty/barrett.html" target="_blank">Professor David Barrett</a> in 2018.
+            <a href="https://drive.google.com/drive/folders/1oreFsJu05_uE-OuI6LiFeVn49ZtF8iON?usp=sharing"
+              target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp;
+            <a href="https://github.com/cohnt/Math-395-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX
+              Source</a> &nbsp;&bull;&nbsp;
+            Math 395 (Honors Analysis I) Taught by <a href="https://lsa.umich.edu/math/people/faculty/barrett.html"
+              target="_blank">Professor David Barrett</a> in 2018.
           </li>
           <li>
-            <a href="https://drive.google.com/file/d/1sXXt_yCa5LNT7K_qQxrLc8UswaXvoODJ/view?usp=sharing" target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp; 
-            <a href="https://github.com/cohnt/Math-217-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX Source</a> &nbsp;&bull;&nbsp; 
-            Math 217 (Proof-Based Linear Algebra) Taught by <a href="https://homepage.univie.ac.at/david.fernandez-breton/english.html" target="_blank">Dr. David Fernández Bretón</a> in 2016.
+            <a href="https://drive.google.com/file/d/1sXXt_yCa5LNT7K_qQxrLc8UswaXvoODJ/view?usp=sharing"
+              target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp;
+            <a href="https://github.com/cohnt/Math-217-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX
+              Source</a> &nbsp;&bull;&nbsp;
+            Math 217 (Proof-Based Linear Algebra) Taught by <a
+              href="https://homepage.univie.ac.at/david.fernandez-breton/english.html" target="_blank">Dr. David
+              Fernández Bretón</a> in 2016.
           </li>
         </ul>
       </section>
@@ -493,13 +584,17 @@
       <section id="js-demos">
         <h2 class="section-title">Interactive JavaScript Demos</h2>
         <p style="margin-bottom: 1rem; color: var(--text-muted); font-size: 0.95rem;">
-          I've created several interactive javascript demos, which you can try out online (no downloads required). I recommend you access these on a computer -- I can't guarantee they'll work on a mobile device.
+          I've created several interactive javascript demos, which you can try out online (no downloads required). I
+          recommend you access these on a computer -- I can't guarantee they'll work on a mobile device.
         </p>
         <ul style="display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1.2rem; font-size: 0.95rem;">
-          <li><a href="http://tommycohn.com/Occupancy-Grid-SLAM-JS/index.html" target="_blank">Occupancy Grid SLAM</a></li>
+          <li><a href="http://tommycohn.com/Occupancy-Grid-SLAM-JS/index.html" target="_blank">Occupancy Grid SLAM</a>
+          </li>
           <li><a href="http://tommycohn.com/MCL/index.html" target="_blank">Monte Carlo Localization</a></li>
-          <li><a href="http://tommycohn.com/Demo-Particle-Filter/index.html" target="_blank">Particle Filter Demo</a></li>
-          <li><a href="http://tommycohn.com/3D-Parametric-Curve-Plotter/" target="_blank">3D Parametric Curve Plotter</a></li>
+          <li><a href="http://tommycohn.com/Demo-Particle-Filter/index.html" target="_blank">Particle Filter Demo</a>
+          </li>
+          <li><a href="http://tommycohn.com/3D-Parametric-Curve-Plotter/" target="_blank">3D Parametric Curve
+              Plotter</a></li>
           <li><a href="http://tommycohn.com/Old-Derivative-Calculator/" target="_blank">Derivative Calculator</a></li>
           <li><a href="http://tommycohn.com/PID-Demo/" target="_blank">PID Controller Demo</a></li>
           <li><a href="http://tommycohn.com/DBSCAN/" target="_blank">DBSCAN Demo</a></li>
@@ -515,4 +610,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
