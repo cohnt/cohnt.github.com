@@ -382,16 +382,24 @@ img, iframe {
 /* ==========================================================================
    Publication Items & Subsections
    ========================================================================== */
-.pub-section-subtitle {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-main);
+.pub-sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 1.25rem;
   margin-bottom: 0.75rem;
 }
 
-.pub-section-subtitle:first-child {
+.pub-sub-header:first-child,
+.pub-sub-section:first-child .pub-sub-header {
   margin-top: 0;
+}
+
+.pub-section-subtitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0;
 }
 
 .pub-list {
