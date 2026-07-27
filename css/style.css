@@ -752,14 +752,9 @@ img, iframe {
     overflow-x: auto;
     white-space: nowrap;
     gap: 0.4rem;
-    padding: 0.4rem 0 0.2rem 0;
+    padding: 0.4rem 0 0.5rem 0;
     width: 100%;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-
-  .profile-nav::-webkit-scrollbar {
-    display: none;
   }
 
   .nav-divider {
