@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250" fill="none">
+  <rect width="400" height="250" fill="url(#bg-gradient)" rx="8"/>
+  <path d="M175 105C175 99.4772 179.477 95 185 95H205L225 115V145C225 150.523 220.523 155 215 155H185C179.477 155 175 150.523 175 145V105Z" stroke="#94a3b8" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M205 95V115H225" stroke="#94a3b8" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="187" y1="125" x2="213" y2="125" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="187" y1="133" x2="207" y2="133" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="187" y1="141" x2="201" y2="141" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="400" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f1f5f9"/>
+      <stop offset="1" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+</svg>
