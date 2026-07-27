@@ -12,6 +12,15 @@
   
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- No-JS Fallback -->
+  <noscript>
+    <style>
+      .scrollable-box { max-height: none !important; overflow-y: visible !important; }
+      .btn-toggle-scroll { display: none !important; }
+      .bibtex-block { display: block !important; }
+    </style>
+  </noscript>
 </head>
 <body>
   <div class="site-container">
@@ -103,8 +112,10 @@
         <div>
           <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--text-main);">Featured Publications</h3>
           <div id="featured-papers-container" class="pub-list">
-            <!-- Automatically populated via JS from #full-pub-list items with data-featured="true" -->
-            <p style="color: var(--text-subtle);">Loading featured publications...</p>
+            <!-- Fallback for No-JS or initial load -->
+            <noscript>
+              <p style="color: var(--text-subtle);">Please see the full publication list below.</p>
+            </noscript>
           </div>
           <div style="margin-top: 1rem; text-align: right;">
             <a href="#publications" style="font-weight: 500; font-size: 0.9rem;">View Full Publication List &rarr;</a>
