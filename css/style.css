@@ -703,8 +703,8 @@ img, iframe {
 @media (max-width: 868px) {
   .site-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    padding: 1rem 0.75rem;
   }
 
   .sidebar {
@@ -712,12 +712,76 @@ img, iframe {
   }
 
   .profile-card {
-    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    grid-template-areas:
+      "avatar name"
+      "avatar bio"
+      "nav nav"
+      "theme theme";
+    gap: 0.4rem 1rem;
+    padding: 1rem;
+    text-align: left;
+    align-items: center;
   }
 
   .avatar-container {
-    width: 130px;
-    height: 130px;
+    grid-area: avatar;
+    width: 84px;
+    height: 68px;
+    margin-bottom: 0;
+  }
+
+  .profile-name {
+    grid-area: name;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
+
+  .profile-bio {
+    grid-area: bio;
+    font-size: 0.84rem;
+    margin-bottom: 0;
+    line-height: 1.35;
+  }
+
+  .profile-nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 0.4rem;
+    padding: 0.4rem 0 0.2rem 0;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .profile-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-divider {
+    display: none;
+  }
+
+  .nav-link {
+    padding: 0.35rem 0.65rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+  }
+
+  .theme-toggle-btn {
+    grid-area: theme;
+    margin-top: 0.25rem;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    justify-self: start;
+    width: auto;
   }
 
   .pub-item {
