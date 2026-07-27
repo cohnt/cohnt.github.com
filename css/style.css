@@ -167,24 +167,21 @@ img, iframe {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
   color: var(--text-main);
 }
 
-.profile-tagline {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--accent-color);
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.profile-bio {
-  font-size: 0.92rem;
+.profile-bio-list {
+  font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.5;
   margin-bottom: 1.25rem;
+  text-align: left;
+  padding-left: 1.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
 .profile-nav {
