@@ -510,16 +510,21 @@ img, iframe {
   text-decoration: underline;
 }
 
-.pub-venue .award {
+.pub-venue .award,
+.pub-awards .award {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
   font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--accent-color);
-  background: var(--bg-tertiary);
+  font-weight: 600;
+  color: var(--badge-gold-text);
+  background: var(--badge-gold-bg);
   padding: 0.15rem 0.45rem;
   border-radius: 4px;
+  margin-left: 0;
+}
+
+.pub-venue > .award {
   margin-left: 0.35rem;
 }
 
@@ -528,10 +533,6 @@ img, iframe {
   flex-wrap: wrap;
   gap: 0.35rem;
   margin-top: 0.25rem;
-}
-
-.pub-awards .award {
-  margin-left: 0;
 }
 
 .award.award-accepted {
