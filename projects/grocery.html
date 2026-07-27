@@ -53,10 +53,10 @@
 							<p>I took responsibility for this task, and quickly realized it would be far more complicated than it first appeared. There were two key challenges. The bag, and especially its handles, are deformable, which makes any detection or localization task inherently more difficult. And furthermore, the depth camera on our robot sometimes struggles to detect the handles. (See the images below for some examples of detection failures.)</p>
 
 							<div style="width:65%;" class=project-media-cont>
-								<img src="../images/grocery/missing_bag_handles_1.png" alt="" style="width: 100%;">
+								<img src="../images/projects/grocery/missing_bag_handles_1.png" alt="" style="width: 100%;">
 							</div>
 							<div style="width:32%;" class=project-media-cont>
-								<img src="../images/grocery/missing_bag_handles_2.png" alt="" style="width: 100%;">
+								<img src="../images/projects/grocery/missing_bag_handles_2.png" alt="" style="width: 100%;">
 							</div>
 							<p>
 								First, I explored different ways of extracting information from the raw image input to the robot. Edge detection and the <a href="https://en.wikipedia.org/wiki/Scale-invariant_feature_transform">Scale-Invariant Feature Transform</a> descriptor looked interesting, but ultimately weren't useful in detecting the handles. Eventually, I settled on the <a href="https://ieeexplore.ieee.org/document/1467360">Histogram of Oriented Gradients (HOG)</a> descriptor for feature extraction, since it's good at handling deformable objects.
