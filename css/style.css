@@ -535,14 +535,12 @@ img, iframe {
   margin-top: 0.25rem;
 }
 
-.award.award-accepted {
-  color: #15803d;
-  background: rgba(21, 128, 61, 0.12);
+.award.award-accepted i {
+  color: #16a34a;
 }
 
-[data-theme="dark"] .award.award-accepted {
+[data-theme="dark"] .award.award-accepted i {
   color: #4ade80;
-  background: rgba(74, 222, 128, 0.15);
 }
 
 .pub-authors {
