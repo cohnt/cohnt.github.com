@@ -473,6 +473,17 @@ img, iframe {
   color: var(--text-main);
 }
 
+.pub-title a {
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.pub-title a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 .pub-venue {
   font-size: 0.9rem;
   font-weight: 600;
