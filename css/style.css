@@ -535,8 +535,18 @@ img, iframe {
   margin-top: 0.25rem;
 }
 
+.award.award-accepted {
+  color: #15803d;
+  background: #dcfce7;
+}
+
 .award.award-accepted i {
-  color: #16a34a;
+  color: #15803d;
+}
+
+[data-theme="dark"] .award.award-accepted {
+  color: #4ade80;
+  background: rgba(34, 197, 94, 0.18);
 }
 
 [data-theme="dark"] .award.award-accepted i {
