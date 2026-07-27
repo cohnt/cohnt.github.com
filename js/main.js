@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bibtexBtn = e.target.closest('.btn-bibtex');
     if (bibtexBtn) {
       e.preventDefault();
-      const pubItem = bibtexBtn.closest('.pub-item');
+      const pubItem = bibtexBtn.closest('.pub-item, .project-card, article');
       if (pubItem) {
         const bibtexBlock = pubItem.querySelector('.bibtex-block');
         if (bibtexBlock) {
