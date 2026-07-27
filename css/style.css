@@ -709,6 +709,13 @@ img, iframe {
   color: var(--text-main);
 }
 
+.card-with {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+
 .card-desc {
   font-size: 0.88rem;
   color: var(--text-muted);
