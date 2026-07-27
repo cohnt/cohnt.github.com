@@ -21,7 +21,7 @@
   --radius: 12px;
   --radius-sm: 6px;
   --transition-speed: 0.2s;
-  --sidebar-width: 280px;
+  --sidebar-width: 310px;
 }
 
 [data-theme="dark"] {
@@ -143,10 +143,11 @@ img, iframe {
 }
 
 .avatar-container {
-  width: 210px;
-  height: 210px;
+  width: 100%;
+  max-width: 270px;
+  height: 220px;
   margin-bottom: 1.25rem;
-  border-radius: 50%;
+  border-radius: var(--radius);
   overflow: hidden;
   border: 3px solid var(--border-color);
   box-shadow: var(--shadow-md);
