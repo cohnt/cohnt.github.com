@@ -136,211 +136,221 @@
           <span style="font-size: 0.85rem; font-weight: 400; color: var(--text-muted); font-style: italic; text-transform: none; letter-spacing: normal;">*Denotes equal contribution.</span>
         </h2>
 
-        <div class="box-wrapper">
-          <div id="pub-scrollable-box" class="scrollable-box pub-box">
-            <div id="full-pub-list">
+        <div id="full-pub-list" style="display: flex; flex-direction: column; gap: 2rem;">
 
-              <!-- 1. PREPRINTS -->
-              <h3 class="pub-section-subtitle">Preprints</h3>
-              <div class="pub-list" style="margin-bottom: 2rem;">
-                
-                <div class="pub-item" data-featured="true">
-                  <div class="pub-thumb">
-                    <a href="https://arxiv.org/abs/2606.12365" target="_blank"><img src="images/ambient.gif" alt="Ambient Diffusion Policy thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Ambient Diffusion Policy: Imitation Learning from Suboptimal Data in Robotics</div>
-                    <div class="pub-venue">(2026)</div>
-                    <div class="pub-authors">
-                      <a href="https://adamwei.com/" target="_blank">Adam Wei</a>, <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff*</a>, <b>Thomas Cohn*</b>, <a href="https://keremdayi.com/" target="_blank">Arif Kerem Dayı</a>, <a href="https://people.csail.mit.edu/costis/" target="_blank">Constantinos Daskalakis</a>, <a href="https://giannisdaras.github.io/" target="_blank">Giannis Daras</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+          <!-- 1. PREPRINTS BOX -->
+          <div class="pub-sub-section">
+            <h3 class="pub-section-subtitle">Preprints</h3>
+            <div class="box-wrapper">
+              <div id="preprints-scrollable-box" class="scrollable-box preprints-box">
+                <div class="pub-list">
+                  
+                  <div class="pub-item" data-featured="true">
+                    <div class="pub-thumb">
+                      <a href="https://arxiv.org/abs/2606.12365" target="_blank"><img src="images/ambient.gif" alt="Ambient Diffusion Policy thumbnail" /></a>
                     </div>
-                    <div class="pub-links">
-                      <a href="https://arxiv.org/abs/2606.12365" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                      <a href="https://ambient-diffusion-policy.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@article{wei2026ambient,
+                    <div class="pub-details">
+                      <div class="pub-title">Ambient Diffusion Policy: Imitation Learning from Suboptimal Data in Robotics</div>
+                      <div class="pub-venue">(2026)</div>
+                      <div class="pub-authors">
+                        <a href="https://adamwei.com/" target="_blank">Adam Wei</a>, <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff*</a>, <b>Thomas Cohn*</b>, <a href="https://keremdayi.com/" target="_blank">Arif Kerem Dayı</a>, <a href="https://people.csail.mit.edu/costis/" target="_blank">Constantinos Daskalakis</a>, <a href="https://giannisdaras.github.io/" target="_blank">Giannis Daras</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2606.12365" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                        <a href="https://ambient-diffusion-policy.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@article{wei2026ambient,
   title={Ambient Diffusion Policy: Imitation Learning from Suboptimal Data in Robotics},
   author={Wei, Adam and Pfaff, Nicholas and Cohn, Thomas and Day{\i}, Arif Kerem and Daskalakis, Constantinos and Daras, Giannis and Tedrake, Russ},
   journal={arXiv preprint arXiv:2606.12365},
   year={2026}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="https://arxiv.org/abs/2602.05092" target="_blank"><img src="images/analytic_and_optimization_ik.png" alt="Optimization-Based and Analytic IK thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">A Framework for Combining Optimization-Based and Analytic Inverse Kinematics</div>
-                    <div class="pub-venue">(2026)</div>
-                    <div class="pub-authors">
-                      <b>Thomas Cohn*</b>, <a href="https://www.linkedin.com/in/ltang33/" target="_blank">Lihan Tang*</a>, <a href="https://alexandreamice.github.io/" target="_blank">Alexandre Amice</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="https://arxiv.org/abs/2602.05092" target="_blank"><img src="images/analytic_and_optimization_ik.png" alt="Optimization-Based and Analytic IK thumbnail" /></a>
                     </div>
-                    <div class="pub-links">
-                      <a href="https://arxiv.org/abs/2602.05092" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@article{cohn2026aframework,
+                    <div class="pub-details">
+                      <div class="pub-title">A Framework for Combining Optimization-Based and Analytic Inverse Kinematics</div>
+                      <div class="pub-venue">(2026)</div>
+                      <div class="pub-authors">
+                        <b>Thomas Cohn*</b>, <a href="https://www.linkedin.com/in/ltang33/" target="_blank">Lihan Tang*</a>, <a href="https://alexandreamice.github.io/" target="_blank">Alexandre Amice</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2602.05092" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@article{cohn2026aframework,
   title={A Framework for Combining Optimization-Based and Analytic Inverse Kinematics},
   author={Cohn, Thomas and Tang, Lihan and Amice, Alexandre and Tedrake, Russ},
   journal={arXiv preprint arXiv:2602.05092},
   year={2026}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="https://diffusion-learns-kinematic.github.io/" target="_blank"><img src="images/bimanual_diffusion.gif" alt="Diffusion Policies Kinematic Constraint Manifolds thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">How Well do Diffusion Policies Learn Kinematic Constraint Manifolds?</div>
-                    <div class="pub-venue">
-                      2025 <span class="award"><i class="fas fa-check-circle"></i> Accepted at ICRA 2026</span>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="https://diffusion-learns-kinematic.github.io/" target="_blank"><img src="images/bimanual_diffusion.gif" alt="Diffusion Policies Kinematic Constraint Manifolds thumbnail" /></a>
                     </div>
-                    <div class="pub-authors">
-                      <a href="https://www.linkedin.com/in/lexi-foland-420482292/" target="_blank">Lexi Foland</a>, <b>Thomas Cohn</b>, <a href="https://adamwei.com/" target="_blank">Adam Wei</a>, <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff</a>, <a href="https://www.boyuan.space/" target="_blank">Boyuan Chen</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
-                    </div>
-                    <div class="pub-links">
-                      <a href="https://arxiv.org/abs/2510.01404" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                      <a href="https://diffusion-learns-kinematic.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@article{foland2025how,
+                    <div class="pub-details">
+                      <div class="pub-title">How Well do Diffusion Policies Learn Kinematic Constraint Manifolds?</div>
+                      <div class="pub-venue">
+                        2025 <span class="award"><i class="fas fa-check-circle"></i> Accepted at ICRA 2026</span>
+                      </div>
+                      <div class="pub-authors">
+                        <a href="https://www.linkedin.com/in/lexi-foland-420482292/" target="_blank">Lexi Foland</a>, <b>Thomas Cohn</b>, <a href="https://adamwei.com/" target="_blank">Adam Wei</a>, <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff</a>, <a href="https://www.boyuan.space/" target="_blank">Boyuan Chen</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2510.01404" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                        <a href="https://diffusion-learns-kinematic.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@article{foland2025how,
   title={How Well do Diffusion Policies Learn Kinematic Constraint Manifolds?},
   author={Foland, Lexi and Cohn, Thomas and Wei, Adam and Pfaff, Nicholas and Chen, Boyuan and Tedrake, Russ},
   journal={arXiv preprint arXiv:2510.01404},
   year={2025}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="https://sites.google.com/view/fastiris" target="_blank"><img src="images/fastiris.gif" alt="Faster Algorithms Convex Polytopes thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Faster Algorithms for Growing Collision-Free Convex Polytopes in Robot Configuration Space</div>
-                    <div class="pub-venue">
-                      2024 <span class="award"><i class="fas fa-check-circle"></i> Accepted at ISRR 2024</span>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="https://sites.google.com/view/fastiris" target="_blank"><img src="images/fastiris.gif" alt="Faster Algorithms Convex Polytopes thumbnail" /></a>
                     </div>
-                    <div class="pub-authors">
-                      <a href="https://wernerpe.github.io/" target="_blank">Peter Werner</a>, <b>Thomas Cohn*</b>, Rebecca H. Jiang*, <a href="https://tseyde.github.io/" target="_blank">Tim Seyde</a>, <a href="https://msimchowitz.github.io/" target="_blank">Max Simchowitz</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>, <a href="https://danielarus.csail.mit.edu/" target="_blank">Daniela Rus</a>
-                    </div>
-                    <div class="pub-links">
-                      <a href="https://arxiv.org/abs/2410.12649" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                      <a href="https://sites.google.com/view/fastiris" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@article{werner2024faster,
+                    <div class="pub-details">
+                      <div class="pub-title">Faster Algorithms for Growing Collision-Free Convex Polytopes in Robot Configuration Space</div>
+                      <div class="pub-venue">
+                        2024 <span class="award"><i class="fas fa-check-circle"></i> Accepted at ISRR 2024</span>
+                      </div>
+                      <div class="pub-authors">
+                        <a href="https://wernerpe.github.io/" target="_blank">Peter Werner</a>, <b>Thomas Cohn*</b>, Rebecca H. Jiang*, <a href="https://tseyde.github.io/" target="_blank">Tim Seyde</a>, <a href="https://msimchowitz.github.io/" target="_blank">Max Simchowitz</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>, <a href="https://danielarus.csail.mit.edu/" target="_blank">Daniela Rus</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2410.12649" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                        <a href="https://sites.google.com/view/fastiris" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@article{werner2024faster,
   title={Faster Algorithms for Growing Collision-Free Convex Polytopes in Robot Configuration Space},
   author={Werner, Peter and Cohn, Thomas and Jiang, Rebecca H. and Seyde, Tim and Simchowitz, Max and Tedrake, Russ and Rus, Daniela},
   journal={arXiv preprint arXiv:2410.12649},
   year={2024}
 }</div>
+                    </div>
                   </div>
+
                 </div>
-
               </div>
+              <div class="box-actions">
+                <button type="button" class="btn-toggle-scroll" data-target="preprints-scrollable-box">Show More</button>
+              </div>
+            </div>
+          </div>
 
-              <!-- 2. PEER-REVIEWED CONFERENCE & JOURNAL PROCEEDINGS -->
-              <h3 class="pub-section-subtitle">Peer-Reviewed Conference & Journal Proceedings</h3>
-              <div class="pub-list" style="margin-bottom: 2rem;">
+          <!-- 2. PEER-REVIEWED CONFERENCE & JOURNAL PROCEEDINGS BOX -->
+          <div class="pub-sub-section">
+            <h3 class="pub-section-subtitle">Peer-Reviewed Conference & Journal Proceedings</h3>
+            <div class="box-wrapper">
+              <div id="proceedings-scrollable-box" class="scrollable-box proceedings-box">
+                <div class="pub-list">
 
-                <div class="pub-item" data-featured="true">
-                  <div class="pub-thumb">
-                    <a href="https://scenesmith.github.io/" target="_blank"><img src="images/scenesmith.gif" alt="SceneSmith thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes</div>
-                    <div class="pub-venue">
-                      ICML 2026 <span class="award"><i class="fas fa-star"></i> Spotlight</span>
+                  <div class="pub-item" data-featured="true">
+                    <div class="pub-thumb">
+                      <a href="https://scenesmith.github.io/" target="_blank"><img src="images/scenesmith.gif" alt="SceneSmith thumbnail" /></a>
                     </div>
-                    <div class="pub-authors">
-                      <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff</a>, <b>Thomas Cohn</b>, <a href="https://zakharos.github.io/" target="_blank">Sergey Zakharov</a>, <a href="https://www.linkedin.com/in/rick-cory-31a68979/" target="_blank">Rick Cory</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
-                    </div>
-                    <div class="pub-links">
-                      <a href="https://arxiv.org/abs/2602.09153" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                      <a href="https://scenesmith.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{pfaff2026scenesmith,
+                    <div class="pub-details">
+                      <div class="pub-title">SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes</div>
+                      <div class="pub-venue">
+                        ICML 2026 <span class="award"><i class="fas fa-star"></i> Spotlight</span>
+                      </div>
+                      <div class="pub-authors">
+                        <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff</a>, <b>Thomas Cohn</b>, <a href="https://zakharos.github.io/" target="_blank">Sergey Zakharov</a>, <a href="https://www.linkedin.com/in/rick-cory-31a68979/" target="_blank">Rick Cory</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2602.09153" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                        <a href="https://scenesmith.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{pfaff2026scenesmith,
   title={SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes},
   author={Pfaff, Nicholas and Cohn, Thomas and Zakharov, Sergey and Cory, Rick and Tedrake, Russ},
   booktitle={ICML},
   year={2026}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="https://sites.google.com/view/fastiris" target="_blank"><img src="images/fastiris.gif" alt="Faster algorithms IJRR thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Faster algorithms for growing collision-free convex polytopes in robot configuration space</div>
-                    <div class="pub-venue">IJRR 2026</div>
-                    <div class="pub-authors">
-                      <a href="https://wernerpe.github.io/" target="_blank">Peter Werner*</a>, <b>Thomas Cohn*</b>, Rebecca H. Jiang, <a href="https://tseyde.github.io/" target="_blank">Tim Seyde</a>, <a href="https://msimchowitz.github.io/" target="_blank">Max Simchowitz</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>, <a href="https://danielarus.csail.mit.edu/" target="_blank">Daniela Rus</a>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="https://sites.google.com/view/fastiris" target="_blank"><img src="images/fastiris.gif" alt="Faster algorithms IJRR thumbnail" /></a>
                     </div>
-                    <div class="pub-links">
-                      <a href="https://journals.sagepub.com/doi/full/10.1177/02783649261436917" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Journal Article</a>
-                      <a href="https://sites.google.com/view/fastiris" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@article{werner2026faster,
+                    <div class="pub-details">
+                      <div class="pub-title">Faster algorithms for growing collision-free convex polytopes in robot configuration space</div>
+                      <div class="pub-venue">IJRR 2026</div>
+                      <div class="pub-authors">
+                        <a href="https://wernerpe.github.io/" target="_blank">Peter Werner*</a>, <b>Thomas Cohn*</b>, Rebecca H. Jiang, <a href="https://tseyde.github.io/" target="_blank">Tim Seyde</a>, <a href="https://msimchowitz.github.io/" target="_blank">Max Simchowitz</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>, <a href="https://danielarus.csail.mit.edu/" target="_blank">Daniela Rus</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://journals.sagepub.com/doi/full/10.1177/02783649261436917" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Journal Article</a>
+                        <a href="https://sites.google.com/view/fastiris" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@article{werner2026faster,
   title={Faster algorithms for growing collision-free convex polytopes in robot configuration space},
   author={Werner, Peter and Cohn, Thomas and Jiang, Rebecca H. and Seyde, Tim and Simchowitz, Max and Tedrake, Russ and Rus, Daniela},
   journal={The International Journal of Robotics Research},
   year={2026}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="projects/symmetries.html"><img src="images/symmetry.gif" alt="Symmetries Motion Planning thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Sampling-Based Motion Planning with Discrete Configuration-Space Symmetries</div>
-                    <div class="pub-venue">IROS 2025</div>
-                    <div class="pub-authors">
-                      <b>Thomas Cohn</b>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="projects/symmetries.html"><img src="images/symmetry.gif" alt="Symmetries Motion Planning thumbnail" /></a>
                     </div>
-                    <div class="pub-links">
-                      <a href="https://arxiv.org/abs/2503.00614" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                      <a href="projects/symmetries.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                      <a href="https://github.com/cohnt/planning-with-discrete-symmetries" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{cohn2025sampling,
+                    <div class="pub-details">
+                      <div class="pub-title">Sampling-Based Motion Planning with Discrete Configuration-Space Symmetries</div>
+                      <div class="pub-venue">IROS 2025</div>
+                      <div class="pub-authors">
+                        <b>Thomas Cohn</b>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2503.00614" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                        <a href="projects/symmetries.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
+                        <a href="https://github.com/cohnt/planning-with-discrete-symmetries" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{cohn2025sampling,
   title={Sampling-Based Motion Planning with Discrete Configuration-Space Symmetries},
   author={Cohn, Thomas and Tedrake, Russ},
   booktitle={IROS},
   pages={13119--13126},
   year={2025}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="https://ggcs-anonymous-submission.github.io/" target="_blank"><img src="images/ggcs.gif" alt="Non-Euclidean Motion Planning IJRR thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Non-Euclidean motion planning with graphs of geodesically convex sets</div>
-                    <div class="pub-venue">IJRR 2025</div>
-                    <div class="pub-authors">
-                      <b>Thomas Cohn</b>, <a href="https://www.linkedin.com/in/mpetersen94/" target="_blank">Mark Petersen</a>, <a href="https://msimchowitz.github.io/" target="_blank">Max Simchowitz</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="https://ggcs-anonymous-submission.github.io/" target="_blank"><img src="images/ggcs.gif" alt="Non-Euclidean Motion Planning IJRR thumbnail" /></a>
                     </div>
-                    <div class="pub-links">
-                      <a href="https://journals.sagepub.com/doi/10.1177/02783649241302419" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Journal Article</a>
-                      <a href="https://ggcs-anonymous-submission.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@article{cohn2025noneuclidean,
+                    <div class="pub-details">
+                      <div class="pub-title">Non-Euclidean motion planning with graphs of geodesically convex sets</div>
+                      <div class="pub-venue">IJRR 2025</div>
+                      <div class="pub-authors">
+                        <b>Thomas Cohn</b>, <a href="https://www.linkedin.com/in/mpetersen94/" target="_blank">Mark Petersen</a>, <a href="https://msimchowitz.github.io/" target="_blank">Max Simchowitz</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://journals.sagepub.com/doi/10.1177/02783649241302419" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Journal Article</a>
+                        <a href="https://ggcs-anonymous-submission.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@article{cohn2025noneuclidean,
   title={Non-Euclidean motion planning with graphs of geodesically convex sets},
   author={Cohn, Thomas and Petersen, Mark and Simchowitz, Max and Tedrake, Russ},
   journal={The International Journal of Robotics Research},
@@ -349,133 +359,133 @@
   pages={1840--1862},
   year={2025}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="https://shrutigarg914.github.io/pgd-gcs-results/" target="_blank"><img src="images/pgd_gcs.gif" alt="Graphs of Convex Sets RA-L thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Planning Shorter Paths in Graphs of Convex Sets by Undistorting Parametrized Configuration Spaces</div>
-                    <div class="pub-venue">RA-L 2025</div>
-                    <div class="pub-authors">
-                      <a href="https://shrutigarg914.github.io/" target="_blank">Shruti Garg</a>, <b>Thomas Cohn</b>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="https://shrutigarg914.github.io/pgd-gcs-results/" target="_blank"><img src="images/pgd_gcs.gif" alt="Graphs of Convex Sets RA-L thumbnail" /></a>
                     </div>
-                    <div class="pub-links">
-                      <a href="https://ieeexplore.ieee.org/abstract/document/10976384/" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
-                      <a href="https://shrutigarg914.github.io/pgd-gcs-results/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@article{garg2025planning,
+                    <div class="pub-details">
+                      <div class="pub-title">Planning Shorter Paths in Graphs of Convex Sets by Undistorting Parametrized Configuration Spaces</div>
+                      <div class="pub-venue">RA-L 2025</div>
+                      <div class="pub-authors">
+                        <a href="https://shrutigarg914.github.io/" target="_blank">Shruti Garg</a>, <b>Thomas Cohn</b>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10976384/" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
+                        <a href="https://shrutigarg914.github.io/pgd-gcs-results/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@article{garg2025planning,
   title={Planning Shorter Paths in Graphs of Convex Sets by Undistorting Parametrized Configuration Spaces},
   author={Garg, Shruti and Cohn, Thomas and Tedrake, Russ},
   journal={IEEE Robotics and Automation Letters},
   year={2025}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="true">
-                  <div class="pub-thumb">
-                    <a href="https://tommycohn.com/Bimanual-Web/" target="_blank"><img src="images/bimanual.gif" alt="Constrained Bimanual Planning ICRA thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Constrained bimanual planning with analytic inverse kinematics</div>
-                    <div class="pub-venue">
-                      ICRA 2024 <span class="award"><i class="fas fa-trophy"></i> Best Paper in Robot Manipulation Award Finalist</span>
+                  <div class="pub-item" data-featured="true">
+                    <div class="pub-thumb">
+                      <a href="https://tommycohn.com/Bimanual-Web/" target="_blank"><img src="images/bimanual.gif" alt="Constrained Bimanual Planning ICRA thumbnail" /></a>
                     </div>
-                    <div class="pub-authors">
-                      <b>Thomas Cohn</b>, <a href="https://seijis.csail.mit.edu/" target="_blank">Seiji Shaw</a>, <a href="https://msimchowitz.github.io/" target="_blank">Max Simchowitz</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
-                    </div>
-                    <div class="pub-links">
-                      <a href="https://ieeexplore.ieee.org/abstract/document/10610675" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
-                      <a href="https://tommycohn.com/Bimanual-Web/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                      <a href="https://github.com/cohnt/constrained-bimanual-planning-example" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{cohn2024constrained,
+                    <div class="pub-details">
+                      <div class="pub-title">Constrained bimanual planning with analytic inverse kinematics</div>
+                      <div class="pub-venue">
+                        ICRA 2024 <span class="award"><i class="fas fa-trophy"></i> Best Paper in Robot Manipulation Award Finalist</span>
+                      </div>
+                      <div class="pub-authors">
+                        <b>Thomas Cohn</b>, <a href="https://seijis.csail.mit.edu/" target="_blank">Seiji Shaw</a>, <a href="https://msimchowitz.github.io/" target="_blank">Max Simchowitz</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10610675" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
+                        <a href="https://tommycohn.com/Bimanual-Web/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                        <a href="https://github.com/cohnt/constrained-bimanual-planning-example" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{cohn2024constrained,
   title={Constrained bimanual planning with analytic inverse kinematics},
   author={Cohn, Thomas and Shaw, Seiji and Simchowitz, Max and Tedrake, Russ},
   booktitle={ICRA},
   pages={6935--6942},
   year={2024}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="true">
-                  <div class="pub-thumb">
-                    <a href="https://ggcs-anonymous-submission.github.io/" target="_blank"><img src="images/ggcs.gif" alt="Non-Euclidean Motion Planning RSS thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Non-Euclidean Motion Planning with Graphs of Geodesically-Convex Sets</div>
-                    <div class="pub-venue">
-                      RSS 2023 <span class="award"><i class="fas fa-trophy"></i> Best Paper Award Finalist</span>
+                  <div class="pub-item" data-featured="true">
+                    <div class="pub-thumb">
+                      <a href="https://ggcs-anonymous-submission.github.io/" target="_blank"><img src="images/ggcs.gif" alt="Non-Euclidean Motion Planning RSS thumbnail" /></a>
                     </div>
-                    <div class="pub-authors">
-                      <b>Thomas Cohn</b>, <a href="https://www.linkedin.com/in/mpetersen94/" target="_blank">Mark Petersen</a>, <a href="https://msimchowitz.github.io/" target="_blank">Max Simchowitz</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
-                    </div>
-                    <div class="pub-links">
-                      <a href="https://www.roboticsproceedings.org/rss19/p057.html" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Conference Paper</a>
-                      <a href="https://ggcs-anonymous-submission.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                      <a href="https://www.youtube.com/watch?v=JbqIYJcWU9U" class="pub-link-btn" target="_blank"><i class="fab fa-youtube"></i> Presentation</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{cohn2023noneuclidean,
+                    <div class="pub-details">
+                      <div class="pub-title">Non-Euclidean Motion Planning with Graphs of Geodesically-Convex Sets</div>
+                      <div class="pub-venue">
+                        RSS 2023 <span class="award"><i class="fas fa-trophy"></i> Best Paper Award Finalist</span>
+                      </div>
+                      <div class="pub-authors">
+                        <b>Thomas Cohn</b>, <a href="https://www.linkedin.com/in/mpetersen94/" target="_blank">Mark Petersen</a>, <a href="https://msimchowitz.github.io/" target="_blank">Max Simchowitz</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://www.roboticsproceedings.org/rss19/p057.html" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Conference Paper</a>
+                        <a href="https://ggcs-anonymous-submission.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                        <a href="https://www.youtube.com/watch?v=JbqIYJcWU9U" class="pub-link-btn" target="_blank"><i class="fab fa-youtube"></i> Presentation</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{cohn2023noneuclidean,
   title={Non-Euclidean Motion Planning with Graphs of Geodesically-Convex Sets},
   author={Cohn, Thomas and Petersen, Mark and Simchowitz, Max and Tedrake, Russ},
   booktitle={RSS},
   year={2023}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="projects/tial.html"><img src="images/tial_shrunk.gif" alt="Topologically-informed Atlas Learning thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Topologically-informed atlas learning</div>
-                    <div class="pub-venue">ICRA 2022</div>
-                    <div class="pub-authors">
-                      <b>Thomas Cohn</b>, <a href="https://www.nikhildevraj.com/" target="_blank">Nikhil Devraj</a>, <a href="https://ocj.name/" target="_blank">Odest Chadwicke Jenkins</a>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="projects/tial.html"><img src="images/tial_shrunk.gif" alt="Topologically-informed Atlas Learning thumbnail" /></a>
                     </div>
-                    <div class="pub-links">
-                      <a href="https://ieeexplore.ieee.org/abstract/document/9812311" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
-                      <a href="projects/tial.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                      <a href="https://www.youtube.com/watch?v=I1guvJNtpV4" class="pub-link-btn" target="_blank"><i class="fab fa-youtube"></i> Presentation</a>
-                      <a href="https://github.com/cohnt/Topologically-Informed-Atlas-Learning" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{cohn2022topologically,
+                    <div class="pub-details">
+                      <div class="pub-title">Topologically-informed atlas learning</div>
+                      <div class="pub-venue">ICRA 2022</div>
+                      <div class="pub-authors">
+                        <b>Thomas Cohn</b>, <a href="https://www.nikhildevraj.com/" target="_blank">Nikhil Devraj</a>, <a href="https://ocj.name/" target="_blank">Odest Chadwicke Jenkins</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9812311" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
+                        <a href="projects/tial.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
+                        <a href="https://www.youtube.com/watch?v=I1guvJNtpV4" class="pub-link-btn" target="_blank"><i class="fab fa-youtube"></i> Presentation</a>
+                        <a href="https://github.com/cohnt/Topologically-Informed-Atlas-Learning" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{cohn2022topologically,
   title={Topologically-informed atlas learning},
   author={Cohn, Thomas and Devraj, Nikhil and Jenkins, Odest Chadwicke},
   booktitle={ICRA},
   pages={3598--3604},
   year={2022}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="projects/tsbp.html"><img src="images/tsbp_shrunk.gif" alt="TSBP Manifold Learning thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">TSBP: Tangent Space Belief Propagation for Manifold Learning</div>
-                    <div class="pub-venue">RA-L + IROS 2020</div>
-                    <div class="pub-authors">
-                      <b>Thomas Cohn</b>, <a href="https://ocj.name/" target="_blank">Odest Chadwicke Jenkins</a>, <a href="https://karthikdesingh.com/" target="_blank">Karthik Desingh</a>, <a href="https://www.zhenzeng.org/" target="_blank">Zhen Zeng</a>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="projects/tsbp.html"><img src="images/tsbp_shrunk.gif" alt="TSBP Manifold Learning thumbnail" /></a>
                     </div>
-                    <div class="pub-links">
-                      <a href="https://ieeexplore.ieee.org/document/9166624" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
-                      <a href="projects/tsbp.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
-                      <a href="https://www.youtube.com/watch?v=P46YEvAFj2I" class="pub-link-btn" target="_blank"><i class="fab fa-youtube"></i> Presentation</a>
-                      <a href="https://github.com/cohnt/Tangent-Space-Belief-Propagation/" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@article{cohn2020tsbp,
+                    <div class="pub-details">
+                      <div class="pub-title">TSBP: Tangent Space Belief Propagation for Manifold Learning</div>
+                      <div class="pub-venue">RA-L + IROS 2020</div>
+                      <div class="pub-authors">
+                        <b>Thomas Cohn</b>, <a href="https://ocj.name/" target="_blank">Odest Chadwicke Jenkins</a>, <a href="https://karthikdesingh.com/" target="_blank">Karthik Desingh</a>, <a href="https://www.zhenzeng.org/" target="_blank">Zhen Zeng</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://ieeexplore.ieee.org/document/9166624" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
+                        <a href="projects/tsbp.html" class="pub-link-btn"><i class="fas fa-globe"></i> Project Page</a>
+                        <a href="https://www.youtube.com/watch?v=P46YEvAFj2I" class="pub-link-btn" target="_blank"><i class="fab fa-youtube"></i> Presentation</a>
+                        <a href="https://github.com/cohnt/Tangent-Space-Belief-Propagation/" class="pub-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@article{cohn2020tsbp,
   title={TSBP: Tangent Space Belief Propagation for Manifold Learning},
   author={Cohn, Thomas and Jenkins, Odest Chadwicke and Desingh, Karthik and Zeng, Zhen},
   journal={IEEE Robotics and Automation Letters},
@@ -484,193 +494,203 @@
   pages={6694--6701},
   year={2020}
 }</div>
+                    </div>
                   </div>
+
                 </div>
-
               </div>
+              <div class="box-actions">
+                <button type="button" class="btn-toggle-scroll" data-target="proceedings-scrollable-box">Show More</button>
+              </div>
+            </div>
+          </div>
 
-              <!-- 3. WORKSHOP PAPERS -->
-              <h3 class="pub-section-subtitle">Workshop Papers</h3>
-              <div class="pub-list">
+          <!-- 3. WORKSHOP PAPERS BOX -->
+          <div class="pub-sub-section">
+            <h3 class="pub-section-subtitle">Workshop Papers</h3>
+            <div class="box-wrapper">
+              <div id="workshops-scrollable-box" class="scrollable-box workshops-box">
+                <div class="pub-list">
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="https://arxiv.org/abs/2606.12365" target="_blank"><img src="images/ambient.gif" alt="Ambient Diffusion Policy workshop thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Ambient Diffusion Policy: Imitation Learning from Suboptimal Data in Robotics</div>
-                    <div class="pub-venue">
-                      RSS 2026 Workshop on Data-Centric Robotics <span class="award"><i class="fas fa-trophy"></i> Best Workshop Paper Award</span>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="https://arxiv.org/abs/2606.12365" target="_blank"><img src="images/ambient.gif" alt="Ambient Diffusion Policy workshop thumbnail" /></a>
                     </div>
-                    <div class="pub-authors">
-                      <a href="https://adamwei.com/" target="_blank">Adam Wei</a>, <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff*</a>, <b>Thomas Cohn*</b>, <a href="https://keremdayi.com/" target="_blank">Arif Kerem Dayı</a>, <a href="https://people.csail.mit.edu/costis/" target="_blank">Constantinos Daskalakis</a>, <a href="https://giannisdaras.github.io/" target="_blank">Giannis Daras</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
-                    </div>
-                    <div class="pub-links">
-                      <a href="https://arxiv.org/abs/2606.12365" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{wei2026ambient_workshop_friday,
+                    <div class="pub-details">
+                      <div class="pub-title">Ambient Diffusion Policy: Imitation Learning from Suboptimal Data in Robotics</div>
+                      <div class="pub-venue">
+                        RSS 2026 Workshop on Data-Centric Robotics <span class="award"><i class="fas fa-trophy"></i> Best Workshop Paper Award</span>
+                      </div>
+                      <div class="pub-authors">
+                        <a href="https://adamwei.com/" target="_blank">Adam Wei</a>, <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff*</a>, <b>Thomas Cohn*</b>, <a href="https://keremdayi.com/" target="_blank">Arif Kerem Dayı</a>, <a href="https://people.csail.mit.edu/costis/" target="_blank">Constantinos Daskalakis</a>, <a href="https://giannisdaras.github.io/" target="_blank">Giannis Daras</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2606.12365" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{wei2026ambient_workshop_friday,
   title={Ambient Diffusion Policy: Imitation Learning from Suboptimal Data in Robotics},
   author={Wei, Adam and Pfaff, Nicholas and Cohn, Thomas and Day{\i}, Arif Kerem and Daskalakis, Constantinos and Daras, Giannis and Tedrake, Russ},
   booktitle={RSS Workshop on Data-Centric Robotics},
   year={2026}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="https://arxiv.org/abs/2606.12365" target="_blank"><img src="images/ambient.gif" alt="Ambient Diffusion Policy RSS Demo Quality Workshop thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Ambient Diffusion Policy: Imitation Learning from Suboptimal Data in Robotics</div>
-                    <div class="pub-venue">
-                      RSS 2026 Workshop on Demonstration Quality <span class="award"><i class="fas fa-star"></i> Spotlight & Most Useful Practical Info Award</span>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="https://arxiv.org/abs/2606.12365" target="_blank"><img src="images/ambient.gif" alt="Ambient Diffusion Policy RSS Demo Quality Workshop thumbnail" /></a>
                     </div>
-                    <div class="pub-authors">
-                      <a href="https://adamwei.com/" target="_blank">Adam Wei</a>, <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff*</a>, <b>Thomas Cohn*</b>, <a href="https://keremdayi.com/" target="_blank">Arif Kerem Dayı</a>, <a href="https://people.csail.mit.edu/costis/" target="_blank">Constantinos Daskalakis</a>, <a href="https://giannisdaras.github.io/" target="_blank">Giannis Daras</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
-                    </div>
-                    <div class="pub-links">
-                      <a href="https://arxiv.org/abs/2606.12365" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{wei2026ambient_workshop_monday,
+                    <div class="pub-details">
+                      <div class="pub-title">Ambient Diffusion Policy: Imitation Learning from Suboptimal Data in Robotics</div>
+                      <div class="pub-venue">
+                        RSS 2026 Workshop on Demonstration Quality <span class="award"><i class="fas fa-star"></i> Spotlight & Most Useful Practical Info Award</span>
+                      </div>
+                      <div class="pub-authors">
+                        <a href="https://adamwei.com/" target="_blank">Adam Wei</a>, <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff*</a>, <b>Thomas Cohn*</b>, <a href="https://keremdayi.com/" target="_blank">Arif Kerem Dayı</a>, <a href="https://people.csail.mit.edu/costis/" target="_blank">Constantinos Daskalakis</a>, <a href="https://giannisdaras.github.io/" target="_blank">Giannis Daras</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2606.12365" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{wei2026ambient_workshop_monday,
   title={Ambient Diffusion Policy: Imitation Learning from Suboptimal Data in Robotics},
   author={Wei, Adam and Pfaff, Nicholas and Cohn, Thomas and Day{\i}, Arif Kerem and Daskalakis, Constantinos and Daras, Giannis and Tedrake, Russ},
   booktitle={RSS Workshop on Demonstration Quality in Imitation-Based Robot Manipulation},
   year={2026}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a><img src="images/principled_domain_extension.png" alt="Principled Domain Extension thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Principled Domain Extension for Analytic IK</div>
-                    <div class="pub-venue">
-                      RSS 2026 Workshop on The Geometry of Motion <span class="award"><i class="fas fa-trophy"></i> Best Workshop Paper Runner Up</span>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a><img src="images/principled_domain_extension.png" alt="Principled Domain Extension thumbnail" /></a>
                     </div>
-                    <div class="pub-authors">
-                      <b>Thomas Cohn</b>, <a href="https://seijis.csail.mit.edu/" target="_blank">Seiji Shaw</a>, <a href="https://aeroastro.mit.edu/people/nicholas-roy/" target="_blank">Nicholas Roy</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
-                    </div>
-                    <div class="pub-links">
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{cohn2026principled,
+                    <div class="pub-details">
+                      <div class="pub-title">Principled Domain Extension for Analytic IK</div>
+                      <div class="pub-venue">
+                        RSS 2026 Workshop on The Geometry of Motion <span class="award"><i class="fas fa-trophy"></i> Best Workshop Paper Runner Up</span>
+                      </div>
+                      <div class="pub-authors">
+                        <b>Thomas Cohn</b>, <a href="https://seijis.csail.mit.edu/" target="_blank">Seiji Shaw</a>, <a href="https://aeroastro.mit.edu/people/nicholas-roy/" target="_blank">Nicholas Roy</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{cohn2026principled,
   title={Principled Domain Extension for Analytic IK},
   author={Cohn, Thomas and Shaw, Seiji and Roy, Nicholas and Tedrake, Russ},
   booktitle={RSS Workshop on The Geometry of Motion},
   year={2026}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="https://arxiv.org/abs/2602.05092" target="_blank"><img src="images/analytic_and_optimization_ik.png" alt="Optimization-Based and Analytic IK ICRA Workshop thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">A Framework for Combining Optimization-Based and Analytic Inverse Kinematics</div>
-                    <div class="pub-venue">ICRA 2026 Workshop on Frontiers of Optimization</div>
-                    <div class="pub-authors">
-                      <b>Thomas Cohn*</b>, <a href="https://www.linkedin.com/in/ltang33/" target="_blank">Lihan Tang*</a>, <a href="https://alexandreamice.github.io/" target="_blank">Alexandre Amice</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="https://arxiv.org/abs/2602.05092" target="_blank"><img src="images/analytic_and_optimization_ik.png" alt="Optimization-Based and Analytic IK ICRA Workshop thumbnail" /></a>
                     </div>
-                    <div class="pub-links">
-                      <a href="https://arxiv.org/abs/2602.05092" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{cohn2026aframework_workshop,
+                    <div class="pub-details">
+                      <div class="pub-title">A Framework for Combining Optimization-Based and Analytic Inverse Kinematics</div>
+                      <div class="pub-venue">ICRA 2026 Workshop on Frontiers of Optimization</div>
+                      <div class="pub-authors">
+                        <b>Thomas Cohn*</b>, <a href="https://www.linkedin.com/in/ltang33/" target="_blank">Lihan Tang*</a>, <a href="https://alexandreamice.github.io/" target="_blank">Alexandre Amice</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2602.05092" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{cohn2026aframework_workshop,
   title={A Framework for Combining Optimization-Based and Analytic Inverse Kinematics},
   author={Cohn, Thomas and Tang, Lihan and Amice, Alexandre and Tedrake, Russ},
   booktitle={ICRA Workshop on Frontiers of Optimization for Robotics},
   year={2026}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a><img src="images/inverse_function_theorem_charts.png" alt="Planning along Differentiable Charts thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Planning along Differentiable Charts of Constraint Manifolds with the Inverse Function Theorem</div>
-                    <div class="pub-venue">ICRA 2026 Workshop on Geometry in Data-Driven Robotics</div>
-                    <div class="pub-authors">
-                      <b>Thomas Cohn</b>, <a href="https://seijis.csail.mit.edu/" target="_blank">Seiji Shaw</a>, <a href="https://aeroastro.mit.edu/people/nicholas-roy/" target="_blank">Nicholas Roy</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a><img src="images/inverse_function_theorem_charts.png" alt="Planning along Differentiable Charts thumbnail" /></a>
                     </div>
-                    <div class="pub-links">
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{cohn2026planning,
+                    <div class="pub-details">
+                      <div class="pub-title">Planning along Differentiable Charts of Constraint Manifolds with the Inverse Function Theorem</div>
+                      <div class="pub-venue">ICRA 2026 Workshop on Geometry in Data-Driven Robotics</div>
+                      <div class="pub-authors">
+                        <b>Thomas Cohn</b>, <a href="https://seijis.csail.mit.edu/" target="_blank">Seiji Shaw</a>, <a href="https://aeroastro.mit.edu/people/nicholas-roy/" target="_blank">Nicholas Roy</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{cohn2026planning,
   title={Planning along Differentiable Charts of Constraint Manifolds with the Inverse Function Theorem},
   author={Cohn, Thomas and Shaw, Seiji and Roy, Nicholas and Tedrake, Russ},
   booktitle={ICRA Workshop on Geometry in the Age of Data-Driven Robotics},
   year={2026}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="https://sites.google.com/view/fastiris" target="_blank"><img src="images/fastiris.gif" alt="Faster Algorithms Bimanual Workshop thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">Faster Algorithms for Growing Collision-Free Regions of Constrained Bimanual Configuration Spaces</div>
-                    <div class="pub-venue">
-                      IROS 2025 Workshop on Multi-Arm Manipulation <span class="award"><i class="fas fa-trophy"></i> Best Workshop Paper Award</span>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="https://sites.google.com/view/fastiris" target="_blank"><img src="images/fastiris.gif" alt="Faster Algorithms Bimanual Workshop thumbnail" /></a>
                     </div>
-                    <div class="pub-authors">
-                      <b>Thomas Cohn</b>, <a href="https://wernerpe.github.io/" target="_blank">Peter Werner</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
-                    </div>
-                    <div class="pub-links">
-                      <a href="https://groups.csail.mit.edu/robotics-center/public_papers/Cohn25a.pdf" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Workshop Paper</a>
-                      <a href="https://sites.google.com/view/fastiris" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{cohn2025faster_workshop,
+                    <div class="pub-details">
+                      <div class="pub-title">Faster Algorithms for Growing Collision-Free Regions of Constrained Bimanual Configuration Spaces</div>
+                      <div class="pub-venue">
+                        IROS 2025 Workshop on Multi-Arm Manipulation <span class="award"><i class="fas fa-trophy"></i> Best Workshop Paper Award</span>
+                      </div>
+                      <div class="pub-authors">
+                        <b>Thomas Cohn</b>, <a href="https://wernerpe.github.io/" target="_blank">Peter Werner</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://groups.csail.mit.edu/robotics-center/public_papers/Cohn25a.pdf" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Workshop Paper</a>
+                        <a href="https://sites.google.com/view/fastiris" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{cohn2025faster_workshop,
   title={Faster Algorithms for Growing Collision-Free Regions of Constrained Bimanual Configuration Spaces},
   author={Cohn, Thomas and Werner, Peter and Tedrake, Russ},
   booktitle={IROS Workshop on Frontiers in Dynamic, Intelligent, and Adaptive Multi-Arm Manipulation},
   year={2025}
 }</div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="pub-item" data-featured="false">
-                  <div class="pub-thumb">
-                    <a href="https://diffusion-learns-kinematic.github.io/" target="_blank"><img src="images/bimanual_diffusion.gif" alt="Diffusion Policies RoDGE Workshop thumbnail" /></a>
-                  </div>
-                  <div class="pub-details">
-                    <div class="pub-title">How Well do Diffusion Policies Learn Kinematic Constraint Manifolds?</div>
-                    <div class="pub-venue">
-                      IROS 2025 Workshop on RoDGE <span class="award"><i class="fas fa-trophy"></i> Best Poster Award</span>
+                  <div class="pub-item" data-featured="false">
+                    <div class="pub-thumb">
+                      <a href="https://diffusion-learns-kinematic.github.io/" target="_blank"><img src="images/bimanual_diffusion.gif" alt="Diffusion Policies RoDGE Workshop thumbnail" /></a>
                     </div>
-                    <div class="pub-authors">
-                      <a href="https://www.linkedin.com/in/lexi-foland-420482292/" target="_blank">Lexi Foland</a>, <b>Thomas Cohn</b>, <a href="https://adamwei.com/" target="_blank">Adam Wei</a>, <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff</a>, <a href="https://www.boyuan.space/" target="_blank">Boyuan Chen</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
-                    </div>
-                    <div class="pub-links">
-                      <a href="https://arxiv.org/abs/2510.01404" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
-                      <a href="https://diffusion-learns-kinematic.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
-                      <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
-                    </div>
-                    <div class="bibtex-block">@inproceedings{foland2025how_workshop,
+                    <div class="pub-details">
+                      <div class="pub-title">How Well do Diffusion Policies Learn Kinematic Constraint Manifolds?</div>
+                      <div class="pub-venue">
+                        IROS 2025 Workshop on RoDGE <span class="award"><i class="fas fa-trophy"></i> Best Poster Award</span>
+                      </div>
+                      <div class="pub-authors">
+                        <a href="https://www.linkedin.com/in/lexi-foland-420482292/" target="_blank">Lexi Foland</a>, <b>Thomas Cohn</b>, <a href="https://adamwei.com/" target="_blank">Adam Wei</a>, <a href="https://nepfaff.github.io/" target="_blank">Nicholas Pfaff</a>, <a href="https://www.boyuan.space/" target="_blank">Boyuan Chen</a>, <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+                      </div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2510.01404" class="pub-link-btn" target="_blank"><i class="far fa-file-pdf"></i> Preprint</a>
+                        <a href="https://diffusion-learns-kinematic.github.io/" class="pub-link-btn" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                        <button type="button" class="pub-link-btn btn-bibtex"><i class="fas fa-quote-right"></i> BibTeX</button>
+                      </div>
+                      <div class="bibtex-block">@inproceedings{foland2025how_workshop,
   title={How Well do Diffusion Policies Learn Kinematic Constraint Manifolds?},
   author={Foland, Lexi and Cohn, Thomas and Wei, Adam and Pfaff, Nicholas and Chen, Boyuan and Tedrake, Russ},
   booktitle={IROS Workshop on RoDGE: Robotic Data Generation and Evaluation},
   year={2025}
 }</div>
+                    </div>
                   </div>
+
                 </div>
-
               </div>
-
+              <div class="box-actions">
+                <button type="button" class="btn-toggle-scroll" data-target="workshops-scrollable-box">Show More</button>
+              </div>
             </div>
           </div>
-          <div class="box-actions">
-            <button type="button" class="btn-toggle-scroll" data-target="pub-scrollable-box">Show More</button>
-          </div>
+
         </div>
       </section>
 
@@ -901,7 +921,7 @@
           </li>
           <li>
             <a href="https://drive.google.com/drive/folders/1uCyxSCWTgEcUYhy35CaiHU_Le9SUjyiW?usp=sharing" target="_blank"><i class="far fa-file-pdf"></i> PDF Files</a> &nbsp;&bull;&nbsp; 
-            <a href="https://github.com/cohnt/Math-396-Notes" target="_blank"><i class="fab fa-github"></i> LaTeX Source</a> &nbsp;&bull;&nbsp; 
+            <a href="https://github.com/cohnt/Math-396-Notes" target="_blank"><i class="far fa-github"></i> LaTeX Source</a> &nbsp;&bull;&nbsp; 
             Math 396 (Honors Analysis II) Taught by <a href="https://lsa.umich.edu/math/people/faculty/barrett.html" target="_blank">Professor David Barrett</a> in 2019.
           </li>
           <li>
