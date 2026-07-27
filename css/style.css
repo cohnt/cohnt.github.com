@@ -755,6 +755,12 @@ img, iframe {
     padding: 0.4rem 0 0.5rem 0;
     width: 100%;
     -webkit-overflow-scrolling: touch;
+    cursor: grab;
+    user-select: none;
+  }
+
+  .profile-nav.active-drag {
+    cursor: grabbing;
   }
 
   .nav-divider {

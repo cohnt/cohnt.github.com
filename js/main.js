@@ -87,4 +87,39 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+  // --------------------------------------------------------------------------
+  // 5. Click-and-Drag Horizontal Scroll for Mobile Profile Navigation
+  // --------------------------------------------------------------------------
+  const profileNav = document.querySelector('.profile-nav');
+  if (profileNav) {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    profileNav.addEventListener('mousedown', (e) => {
+      isDown = true;
+      profileNav.classList.add('active-drag');
+      startX = e.pageX - profileNav.offsetLeft;
+      scrollLeft = profileNav.scrollLeft;
+    });
+
+    profileNav.addEventListener('mouseleave', () => {
+      isDown = false;
+      profileNav.classList.remove('active-drag');
+    });
+
+    profileNav.addEventListener('mouseup', () => {
+      isDown = false;
+      profileNav.classList.remove('active-drag');
+    });
+
+    profileNav.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - profileNav.offsetLeft;
+      const walk = (x - startX) * 1.8;
+      profileNav.scrollLeft = scrollLeft - walk;
+    });
+  }
 });
