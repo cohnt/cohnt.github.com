@@ -764,7 +764,15 @@ img, iframe {
   }
 
   .nav-divider {
-    display: none;
+    display: inline-block;
+    width: 2px;
+    height: 22px;
+    border: none;
+    background-color: var(--border-hover);
+    margin: 0 0.5rem;
+    align-self: center;
+    flex-shrink: 0;
+    border-radius: 1px;
   }
 
   .nav-link {
