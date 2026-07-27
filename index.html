@@ -37,7 +37,9 @@
         </p>
 
         <nav class="profile-nav">
-          <a href="#featured" class="nav-link"><i class="fas fa-star"></i> Featured</a>
+          <a href="#recent-news" class="nav-link"><i class="fas fa-newspaper"></i> Recent News</a>
+          <a href="#featured-pubs" class="nav-link"><i class="fas fa-star"></i> Featured Publications</a>
+          <a href="#featured-videos" class="nav-link"><i class="fas fa-video"></i> Featured Videos</a>
           <a href="#publications" class="nav-link"><i class="fas fa-book"></i> Publications</a>
           <a href="#other-projects" class="nav-link"><i class="fas fa-project-diagram"></i> Other Projects</a>
           <a href="#math-notes" class="nav-link"><i class="fas fa-square-root-variable"></i> Math Notes</a>
@@ -60,65 +62,60 @@
     <!-- Main Content Area -->
     <main class="main-content">
       
-      <!-- FEATURED SECTION -->
-      <section id="featured">
-        <h2 class="section-title">Featured Section</h2>
-
-        <!-- Recent News -->
-        <div style="margin-bottom: 2rem;">
-          <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--text-main);">Recent News</h3>
-          <div class="box-wrapper">
-            <div id="news-scrollable-box" class="scrollable-box news-box">
-              <div class="news-list">
-                <div class="news-item">
-                  <span class="news-date">Jul 2026</span>
-                  <span class="news-text">Updated website design and layout reorganization!</span>
-                </div>
-                <div class="news-item">
-                  <span class="news-date">Jun 2026</span>
-                  <span class="news-text">Ambient Diffusion Policy awarded <em>Best Paper Award</em> at RSS 2026 Workshop on Data-Centric Robotics!</span>
-                </div>
-                <div class="news-item">
-                  <span class="news-date">May 2026</span>
-                  <span class="news-text">SceneSmith accepted as Spotlight paper at ICML 2026.</span>
-                </div>
-                <div class="news-item">
-                  <span class="news-date">Feb 2026</span>
-                  <span class="news-text">New preprint posted: "A Framework for Combining Optimization-Based and Analytic Inverse Kinematics".</span>
-                </div>
-                <div class="news-item">
-                  <span class="news-date">Jan 2026</span>
-                  <span class="news-text">Paper on Diffusion Policies accepted to ICRA 2026!</span>
-                </div>
+      <!-- RECENT NEWS SECTION -->
+      <section id="recent-news">
+        <h2 class="section-title">Recent News</h2>
+        <div class="box-wrapper">
+          <div id="news-scrollable-box" class="scrollable-box news-box">
+            <div class="news-list">
+              <div class="news-item">
+                <span class="news-date">Jul 2026</span>
+                <span class="news-text">Updated website design and layout reorganization!</span>
+              </div>
+              <div class="news-item">
+                <span class="news-date">Jun 2026</span>
+                <span class="news-text">Ambient Diffusion Policy awarded <em>Best Paper Award</em> at RSS 2026 Workshop on Data-Centric Robotics!</span>
+              </div>
+              <div class="news-item">
+                <span class="news-date">May 2026</span>
+                <span class="news-text">SceneSmith accepted as Spotlight paper at ICML 2026.</span>
+              </div>
+              <div class="news-item">
+                <span class="news-date">Feb 2026</span>
+                <span class="news-text">New preprint posted: "A Framework for Combining Optimization-Based and Analytic Inverse Kinematics".</span>
+              </div>
+              <div class="news-item">
+                <span class="news-date">Jan 2026</span>
+                <span class="news-text">Paper on Diffusion Policies accepted to ICRA 2026!</span>
               </div>
             </div>
-            <div class="box-actions">
-              <button type="button" class="btn-toggle-scroll" data-target="news-scrollable-box">Show More</button>
-            </div>
+          </div>
+          <div class="box-actions">
+            <button type="button" class="btn-toggle-scroll" data-target="news-scrollable-box">Show More</button>
           </div>
         </div>
+      </section>
 
-        <!-- Featured Videos -->
-        <div style="margin-bottom: 2rem;">
-          <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--text-main);">Featured Videos</h3>
-          <div class="video-container-max">
-            <div class="video-wrapper">
-              <iframe src="https://www.youtube-nocookie.com/embed/videoseries?si=dtQFzFHdzj3SOXfR&amp;list=PLU6BDl-vm1jT5MoTgS2AmHKIbziJpJV63" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Featured Videos Playlist"></iframe>
-            </div>
-          </div>
+      <!-- FEATURED PUBLICATIONS SECTION -->
+      <section id="featured-pubs">
+        <h2 class="section-title">Featured Publications</h2>
+        <div id="featured-papers-container" class="pub-list">
+          <!-- Fallback for No-JS or initial load -->
+          <noscript>
+            <p style="color: var(--text-subtle);">Please see the full publication list below.</p>
+          </noscript>
         </div>
+        <div style="margin-top: 1rem; text-align: right;">
+          <a href="#publications" style="font-weight: 500; font-size: 0.9rem;">View Full Publication List &rarr;</a>
+        </div>
+      </section>
 
-        <!-- Featured Papers -->
-        <div>
-          <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--text-main);">Featured Publications</h3>
-          <div id="featured-papers-container" class="pub-list">
-            <!-- Fallback for No-JS or initial load -->
-            <noscript>
-              <p style="color: var(--text-subtle);">Please see the full publication list below.</p>
-            </noscript>
-          </div>
-          <div style="margin-top: 1rem; text-align: right;">
-            <a href="#publications" style="font-weight: 500; font-size: 0.9rem;">View Full Publication List &rarr;</a>
+      <!-- FEATURED VIDEOS SECTION -->
+      <section id="featured-videos">
+        <h2 class="section-title">Featured Videos</h2>
+        <div class="video-container-max">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/videoseries?si=dtQFzFHdzj3SOXfR&amp;list=PLU6BDl-vm1jT5MoTgS2AmHKIbziJpJV63" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Featured Videos Playlist"></iframe>
           </div>
         </div>
       </section>
