@@ -1,3 +1,0 @@
-# Ignore files dropped in to-be-sorted for processing
-to-be-sorted/*
-!to-be-sorted/.gitkeep
