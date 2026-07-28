@@ -108,7 +108,7 @@ img, iframe {
    Main Grid Layout
    ========================================================================== */
 .site-container {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 2.5rem 1.5rem;
@@ -308,15 +308,15 @@ img, iframe {
 }
 
 .preprints-box {
-  max-height: 300px;
+  max-height: 660px;
 }
 
 .proceedings-box {
-  max-height: 440px;
+  max-height: 660px;
 }
 
 .workshops-box {
-  max-height: 380px;
+  max-height: 660px;
 }
 
 .projects-box {
@@ -367,8 +367,9 @@ img, iframe {
    Video Container with Max Size Constraint
    ========================================================================== */
 .video-container-max {
-  max-width: 600px;
+  max-width: 760px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .video-wrapper {
