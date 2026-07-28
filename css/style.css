@@ -901,3 +901,72 @@ img, iframe {
     max-width: 320px;
   }
 }
+
+/* ==========================================================================
+   Project Subpage Styles
+   ========================================================================== */
+.project-page {
+  display: block;
+}
+
+.project-page > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.project-page > h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.project-page > h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.project-page > p,
+.project-page-cont {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-main);
+}
+
+.project-media-cont,
+.project-page div[style*="width"] {
+  display: inline-block !important;
+  vertical-align: top;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.project-media-cont img,
+.project-media-cont video,
+.project-media-cont iframe,
+.project-page div[style*="width"] img,
+.project-page div[style*="width"] video,
+.project-page div[style*="width"] iframe {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 768px) {
+  .project-media-cont,
+  .project-page div[style*="width"] {
+    width: 100% !important;
+    display: block !important;
+    margin: 0.75rem 0;
+  }
+}
+
+
+
