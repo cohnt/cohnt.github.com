@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
-  // 3. Scrollable Box Toggle ("Show More" / "Show Less")
+  // 3. Scrollable Box Toggle ("Show All" / "Show Less")
   // --------------------------------------------------------------------------
   document.querySelectorAll('.btn-toggle-scroll').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const box = document.getElementById(targetId);
       if (box) {
         const isExpanded = box.classList.toggle('expanded');
-        btn.textContent = isExpanded ? 'Show Less' : 'Show More';
+        btn.textContent = isExpanded ? 'Show Less' : 'Show All';
       }
     });
   });
