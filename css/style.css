@@ -230,6 +230,12 @@ img, iframe {
   text-decoration: none;
 }
 
+.nav-link-subtext {
+  font-weight: 300;
+  color: var(--text-subtle);
+  font-size: 0.85em;
+}
+
 .theme-toggle-btn {
   display: flex;
   align-items: center;
