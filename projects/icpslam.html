@@ -43,7 +43,39 @@
     <main class="main-content">
       <section class="project-page">
         <h1>Simultaneous Localization and Mapping with Iterative Closest Point</h1>
-        <p>Detailed writeup coming soon! For now, here are some videos.</p>
+        <p class="project-page-cont">This was one of my earliest robotics projects, from when I was first getting
+        started with research at the <a href="https://progress.robotics.umich.edu/" target="_blank">Laboratory for
+        Progress</a>, under <a href="https://ocj.name/" target="_blank">Professor Chad Jenkins</a>. The goal was to get a
+        mobile robot to build a map of an unknown environment while simultaneously tracking its own position within that
+        map &mdash; the simultaneous localization and mapping (SLAM) problem. The robot was a Fetch Robotics mobile manipulator, and I
+        used its wheel odometry and planar LIDAR, with everything running on top of <a href="https://www.ros.org/"
+        target="_blank">ROS</a>.</p>
+        <p>Wheel odometry alone drifts quickly, so the robot's estimated pose has to be corrected using the LIDAR scans. I
+        did this with <a href="https://en.wikipedia.org/wiki/Iterative_closest_point" target="_blank">iterative closest point</a>
+        (ICP) scan matching. Each new scan is first placed using the odometry estimate, and then repeatedly refined: every
+        point in the new scan is paired with its nearest neighbor among the points already in the map, and the rigid
+        transformation that best aligns those pairs is computed in closed form via a singular value decomposition of the
+        point correlation matrix. Applying that transformation and re-matching, over and over, drives the new scan into
+        alignment with the existing map. Once the average correction between iterations falls below a threshold, the scan
+        is accepted, its points are merged into the map (with near-duplicate points discarded to keep the map from growing
+        without bound), and the accumulated correction becomes the robot's updated pose estimate.</p>
+        <p>I wrote the whole thing in C++ from scratch, including the scan matching, the map representation, and the ROS
+        nodes that consume the odometry and LIDAR topics. Since I wanted to watch the map form in real time, the mapping node
+        also runs a WebSocket server, which streams poses and scan points to a visualizer I wrote in JavaScript. The
+        visualizer draws the accumulated wall points and the robot's pose and field of view onto an HTML canvas, and lets
+        you pan, zoom, and rotate the view while the map is being built. It also sends the parameters of the mapping
+        algorithm back to the C++ node, so I could retune things like the ICP convergence thresholds without recompiling.
+        That interface is what you see in the videos below.</p>
+        <p>Looking back, the system has all the limitations you would expect. Chief among them is the
+        lack of loop closure: error still accumulates over long trajectories, and the map becomes inconsistent when the
+        robot revisits a place it has already seen. I did try to address this, by manually annotating which poses
+        corresponded to the same location and attempting to rectify the map from those correspondences, but I never got it
+        working. That is exactly the problem I would return to a few years later in my <a href="graphslam.html">EECS 467
+        final project</a>.</p>
+        <p>
+        <a href="https://github.com/cohnt/M4Progress" target="_blank" class="pub-link-btn"><i class="fab fa-github"></i> Explore the Codebase</a>
+        </p>
+        <p>Here are some videos of the system in action.</p>
         <div style="width:49%; display: inline-block;">
         <div class="video-container">
         <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="contained-video" frameborder="0" src="https://www.youtube-nocookie.com/embed/KmQHOOQeRjI"></iframe>
