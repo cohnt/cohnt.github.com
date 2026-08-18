@@ -116,6 +116,31 @@
         </div>
         <p class="image-caption">A similar tracking task, with an added occlusion.</p>
         </div>
+        <p>As a side project along the way, I explored fitting closed splines to object silhouettes, with the idea that
+        a handful of spline control points could serve as a compact, low-dimensional description of a deformable
+        object's shape in an image. The spline is a closed <a
+        href="https://en.wikipedia.org/wiki/Centripetal_Catmull%E2%80%93Rom_spline" target="_blank">centripetal Catmull-Rom
+        spline</a>, initialized as a circle about the centroid of the object's binary mask. I then rasterized the
+        spline's interior and performed gradient ascent on the intersection-over-union between that interior and the
+        mask, using a finite-difference approximation of the gradient with respect to the control points, plus a
+        regularization term that keeps the control points from bunching together. Between iterations, the least useful
+        control point (the one whose removal changes the objective the least) is deleted and reinserted in the middle
+        of another segment, which lets the spline add detail where it is actually needed rather than fixing the
+        parameterization up front.</p>
+        <div class="project-media-cont" style="width:100%; text-align: center;">
+        <div style="width: 30%; display: inline-block; vertical-align: top;">
+        <img alt="Closed spline being fit to a binary object mask by gradient ascent on IoU"
+        src="../images/projects/ccpf/splines.gif" style="max-height: 340px; width: auto;" />
+        <p class="image-caption">The fitting process, starting from a circle. Blue dots are the spline's control
+        points, and orange dots are the mask pixels enclosed by the spline.</p>
+        </div>
+        <div style="width: 30%; display: inline-block; vertical-align: top;">
+        <img alt="Converged closed spline outlining a synthetic object mask"
+        src="../images/projects/ccpf/splines.png" style="max-height: 340px; width: auto;" />
+        <p class="image-caption">The converged fit, after control points have been redistributed to capture the
+        object's concavities.</p>
+        </div>
+        </div>
         <p><a href="https://github.com/cohnt/Deformable-Object-Manifold-Learning" target="_blank" class="pub-link-btn"><i class="fab fa-github"></i>Explore the Codebase</a></p>
       </section>
     </main>
