@@ -615,10 +615,12 @@ img, iframe {
   text-decoration: none;
 }
 
-.bibtex-block {
-  display: none;
-  overflow-anchor: none;
-  margin-top: 0.5rem;
+/* The toggleable citation popups on the homepage, and the static <pre><code>
+   citations on the older project pages, share one look. Nothing else on the
+   site uses <pre>. */
+.bibtex-block,
+pre {
+  margin: 0.5rem 0 0;
   padding: 0.6rem 0.75rem;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
@@ -630,6 +632,17 @@ img, iframe {
   word-break: normal;
   overflow-wrap: break-word;
   color: var(--text-main);
+}
+
+/* <code> carries its own UA font and colour; defer to the <pre> wrapper. */
+pre code {
+  font: inherit;
+  color: inherit;
+}
+
+.bibtex-block {
+  display: none;
+  overflow-anchor: none;
 }
 
 .bibtex-block.active {
