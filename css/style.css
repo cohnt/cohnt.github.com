@@ -21,7 +21,7 @@
   --radius: 12px;
   --radius-sm: 6px;
   --transition-speed: 0.2s;
-  --sidebar-width: 310px;
+  --sidebar-width: 330px;
 }
 
 [data-theme="dark"] {
@@ -231,6 +231,7 @@ img, iframe {
 }
 
 .nav-link-subtext {
+  white-space: nowrap;
   font-weight: 300;
   color: var(--text-subtle);
   font-size: 0.85em;
